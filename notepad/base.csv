@@ -1,4 +1,4 @@
-﻿action;non-instrumented;t1;t2;t3;t4;t5
+﻿action;base_time;exec_time_iteration_1;exec_time_iteration_2;exec_time_iteration_3;exec_time_iteration_4;exec_time_iteration_5
 Click  NEW FILE button;0.743000031;0.736999989;0.765000105;0.734999895;0.764999866;0.736000061
 Click Language menu;0.735000134;0.753999949;0.779999971;0.734000206;0.764000177;0.733999968
 "Click ""J"" Letter";0.761999846;0.760999918;0.795000076;0.761999846;0.779999971;0.761000156

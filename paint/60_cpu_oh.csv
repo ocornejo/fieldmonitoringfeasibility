@@ -1,4 +1,4 @@
-﻿action;non-instrumented;t1;t2;t3;t4;t5
+﻿action;base_time;exec_time_iteration_1;exec_time_iteration_2;exec_time_iteration_3;exec_time_iteration_4;exec_time_iteration_5
 Click APRI;1.735000134;3.431999922;3.416000128;3.758999825;2.917000055;2.760999918
 Paste Path;0.042999983;0.139999866;0.141000032;0.17200017;0.125;0.062000036
 Click OPEN Button;4.871999979;6.96600008;6.879999876;6.656999826;6.973999977;7.118999958

@@ -1,4 +1,4 @@
-action;non-instrumented;t1;t2;t3;t4;t5
+action;base_time;exec_time_iteration_1;exec_time_iteration_2;exec_time_iteration_3;exec_time_iteration_4;exec_time_iteration_5
 Click  File Button;0.779999971;0.738999844;0.764000177;0.78000021;0.763999939;0.764000177
 Press DOWN;0.062999964;0.039999962;0.062999964;0.061999798;0.062999964;0.062999964
 Press ENTER + wait menu;0.893000126;0.879000187;0.842000008;0.85800004;0.842000008;0.85800004

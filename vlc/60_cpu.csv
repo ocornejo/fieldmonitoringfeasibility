@@ -1,4 +1,4 @@
-action;non-instrumented;t1;t2;t3;t4;t5
+action;base_time;exec_time_iteration_1;exec_time_iteration_2;exec_time_iteration_3;exec_time_iteration_4;exec_time_iteration_5
 Click MEDIA Button;0.857000113;0.923000097;0.932999849;0.881999969;0.86500001;0.911000013
 Click OPEN MULTIPLE FILES option;2.162999868;0.929999828;0.904999971;1.030999899;1.049999952;2.505999804
 Click ADD button;1.49000001;1.765000105;1.693000078;1.802000046;1.740999937;1.710999966
