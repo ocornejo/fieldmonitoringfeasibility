@@ -1,12 +1,17 @@
 # Repository data - JSS Paper
 
-This folder contains the samples of the experiment "In-The-Field Monitoring of Functional Calls: Is It Feasible?"
+This repository contains the samples of the experiment "In-The-Field Monitoring of Functional Calls: Is It Feasible?"
 
-In particular, we provide the time samples collected for the four applications of our experiment (e.g., Adobe Reader DC, Notepad++, Paint.NET and VLC Media Player). All the time samples are measured in seconds.
+We provide the time samples collected for the four applications of our experiment (e.g., Adobe Reader DC, Notepad++, Paint.NET and VLC Media Player). All the time samples are measured in seconds.
 
-Each sample file contained in this repository have 7 columns, the column "action" indicates the type of action being executed in the test, the column "base_time" indicates the measured time for the application without any monitoring nor resource saturation. Then, the columns from "exec_time_iteration_1" to "exec_time_iteration_5" indicate the execution time of the action during the 5 replications of the test case for the particular treatment.
+Each sample file contained in this repository have 7 columns:
 
-## We place inside of each application folder the following the set of csv files with the following treatments:
+* the column *action* indicates the type of action being executed in the test
+* the column *base_time* indicates the measured time for the application without any monitoring nor resource saturation. 
+* the columns from *exec_time_iteration_1* to *exec_time_iteration_5* indicate the execution time of the action during the 5 replications of the test case for the particular treatment.
+
+Note that each file corresponds to a certain treatment (e.g., monitoring or resource saturation).
+Each application folder contains the following the set of csv files:
 
 * base: 		execution times without context saturation, with and without monitoring
 * 60_cpu: 		execution times with CPU context saturation (60%), without monitoring
