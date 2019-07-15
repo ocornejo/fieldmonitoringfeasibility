@@ -1,0 +1,36 @@
+action;base_time;exec_time_iteration_1
+Click  File Button;0.779999971;0.744000196
+Press DOWN;0.062999964;0.041999817
+Press ENTER + wait menu;0.893000126;3.348999977
+Paste Filepath ;0.062999964;0.043000221
+Click Open + wait opened file;2.388000011;3.479999781
+Click page counter;0.763000011;0.810000181
+Delete actual number;0.062999964;0.164999962
+Enter wanted page number;0.062000036;0.075999975
+ENTER + wait wanted page ;0.217999935;0.22300005
+Click toggle fullscreen + wait full;1.572000027;7.818000078
+Click reduce screen + wait reduced;0.795000076;1.781999826
+Click move control out of toolbar;1.403000116;1.447000027
+Click pin control bar to toolbar;1.217000008;1.303999901
+Click comment button + position + wait box;2.819999933;3.273999929
+Paste comment text;0.062000036;0.045000076
+Click publish + wait written note;1.66899991;1.512000084
+CTRL + F;0.929000139;0.958999872
+Delete actual word;0.062000036;0.039999962
+Paste word to search;0.061999798;0.041000128
+Click Search;1.434999943;0.751999855
+Close Search ;1.685000181;1.696000099
+Set fit to page view;1.996999979;2.31400013
+Set fit to width view;1.013999939;4.155999899
+Select desired text;2.292999983;2.384000063
+Click Mark Text Button;0.796000004;0.825999975
+Click page counter;0.763999939;0.736999989
+Delete actual number;0.062000036;0.039999962
+Enter wanted page number;0.061999798;0.039999962
+ENTER + wait wanted page ;0.233999968;0.211000204
+Click page counter;0.779999971;0.733999968
+Delete actual number;0.062000036;0.039999962
+Enter wanted page number;0.062000036;0.039999962
+ENTER + wait wanted page ;0.236000061;0.325000048
+Click Close Button;0.872999907;1.680000067
+Select DON'T SAVE;1.56799984;2.075000048
