@@ -1,0 +1,921 @@
+participant;action;srt_type;oh_range;srt
+giovanni;adobe11;Continuous Simple;0-30%;0
+giovanni;adobe12;Instantaneous;80-180%;0
+giovanni;adobe13;Instantaneous;0-30%;0
+giovanni;adobe14;Immediate;0-30%;0
+giovanni;adobe21;Continuous Simple;80-180%;0
+giovanni;adobe22;Continuous Simple;30-80%;0
+giovanni;notepad11;Immediate;0-30%;0
+giovanni;notepad12;Instantaneous;30-80%;0
+giovanni;notepad13;Instantaneous;30-80%;0
+giovanni;notepad14;Continuous Simple;0-30%;0
+giovanni;notepad21;Instantaneous;180+%;0
+giovanni;notepad22;Instantaneous;30-80%;0
+giovanni;notepad23;Continuous Simple;0-30%;0
+giovanni;notepad24;Continuous Simple;0-30%;0
+giovanni;paint11;Continuous Simple;80-180%;0
+giovanni;paint12;Continuous Complex;30-80%;0
+giovanni;paint13;Continuous Simple;80-180%;0
+giovanni;paint14;Continuous Simple;180+%;0
+giovanni;paint15;Continuous Simple;0-30%;0
+giovanni;paint16;Continuous Complex;0-30%;1
+giovanni;paint21;Immediate;180+%;0
+giovanni;paint22;Continuous Complex;0-30%;0
+giovanni;paint23;Instantaneous;0-30%;0
+giovanni;paint24;Captive;0-30%;0
+giovanni;paint25;Captive;0-30%;0
+giovanni;paint26;Continuous Complex;0-30%;0
+giovanni;paint27;Instantaneous;0-30%;0
+giovanni;paint28;Continuous Complex;0-30%;0
+giovanni;paint29;Immediate;80-180%;0
+giovanni;paint210;Captive;0-30%;0
+giovanni;vlc11;Continuous Simple;0-30%;0
+giovanni;vlc12;Continuous Complex;30-80%;1
+giovanni;vlc13;Instantaneous;30-80%;0
+giovanni;vlc14;Continuous Simple;0-30%;0
+giovanni;vlc21;Continuous Simple;30-80%;0
+giovanni;vlc22;Continuous Simple;0-30%;0
+giovanni;vlc23;Continuous Simple;0-30%;0
+giovanni;vlc24;Instantaneous;0-30%;0
+giovanni;vlc25;Continuous Complex;0-30%;0
+giovanni;vlc26;Continuous Simple;0-30%;0
+luca;adobe11;Continuous Simple;0-30%;0
+luca;adobe12;Instantaneous;80-180%;0
+luca;adobe13;Instantaneous;0-30%;0
+luca;adobe14;Immediate;0-30%;0
+luca;adobe21;Continuous Simple;80-180%;0
+luca;adobe22;Continuous Simple;30-80%;0
+luca;notepad11;Immediate;0-30%;0
+luca;notepad12;Instantaneous;30-80%;0
+luca;notepad13;Instantaneous;30-80%;0
+luca;notepad14;Continuous Simple;0-30%;0
+luca;notepad21;Instantaneous;180+%;0
+luca;notepad22;Instantaneous;30-80%;0
+luca;notepad23;Continuous Simple;0-30%;0
+luca;notepad24;Continuous Simple;0-30%;0
+luca;paint11;Continuous Simple;80-180%;0
+luca;paint12;Continuous Complex;30-80%;1
+luca;paint13;Continuous Simple;80-180%;0
+luca;paint14;Continuous Simple;180+%;1
+luca;paint15;Continuous Simple;0-30%;1
+luca;paint16;Continuous Complex;0-30%;1
+luca;paint21;Immediate;180+%;0
+luca;paint22;Continuous Complex;0-30%;0
+luca;paint23;Instantaneous;0-30%;0
+luca;paint24;Captive;0-30%;0
+luca;paint25;Captive;0-30%;1
+luca;paint26;Continuous Complex;0-30%;1
+luca;paint27;Instantaneous;0-30%;0
+luca;paint28;Continuous Complex;0-30%;0
+luca;paint29;Immediate;80-180%;1
+luca;paint210;Captive;0-30%;0
+luca;vlc11;Continuous Simple;0-30%;0
+luca;vlc12;Continuous Complex;30-80%;1
+luca;vlc13;Instantaneous;30-80%;0
+luca;vlc14;Continuous Simple;0-30%;0
+luca;vlc21;Continuous Simple;30-80%;0
+luca;vlc22;Continuous Simple;0-30%;0
+luca;vlc23;Continuous Simple;0-30%;0
+luca;vlc24;Instantaneous;0-30%;0
+luca;vlc25;Continuous Complex;0-30%;0
+luca;vlc26;Continuous Simple;0-30%;0
+andrea;adobe11;Continuous Simple;0-30%;0
+andrea;adobe12;Instantaneous;80-180%;0
+andrea;adobe13;Instantaneous;0-30%;0
+andrea;adobe14;Immediate;0-30%;0
+andrea;adobe21;Continuous Simple;80-180%;0
+andrea;adobe22;Continuous Simple;30-80%;1
+andrea;notepad11;Immediate;0-30%;0
+andrea;notepad12;Instantaneous;30-80%;0
+andrea;notepad13;Instantaneous;30-80%;1
+andrea;notepad14;Continuous Simple;0-30%;0
+andrea;notepad21;Instantaneous;180+%;0
+andrea;notepad22;Instantaneous;30-80%;0
+andrea;notepad23;Continuous Simple;0-30%;0
+andrea;notepad24;Continuous Simple;0-30%;1
+andrea;paint11;Continuous Simple;80-180%;0
+andrea;paint12;Continuous Complex;30-80%;0
+andrea;paint13;Continuous Simple;80-180%;0
+andrea;paint14;Continuous Simple;180+%;1
+andrea;paint15;Continuous Simple;0-30%;0
+andrea;paint16;Continuous Complex;0-30%;0
+andrea;paint21;Immediate;180+%;0
+andrea;paint22;Continuous Complex;0-30%;0
+andrea;paint23;Instantaneous;0-30%;1
+andrea;paint24;Captive;0-30%;0
+andrea;paint25;Captive;0-30%;1
+andrea;paint26;Continuous Complex;0-30%;1
+andrea;paint27;Instantaneous;0-30%;0
+andrea;paint28;Continuous Complex;0-30%;1
+andrea;paint29;Immediate;80-180%;0
+andrea;paint210;Captive;0-30%;0
+andrea;vlc11;Continuous Simple;0-30%;0
+andrea;vlc12;Continuous Complex;30-80%;1
+andrea;vlc13;Instantaneous;30-80%;0
+andrea;vlc14;Continuous Simple;0-30%;0
+andrea;vlc21;Continuous Simple;30-80%;0
+andrea;vlc22;Continuous Simple;0-30%;0
+andrea;vlc23;Continuous Simple;0-30%;0
+andrea;vlc24;Instantaneous;0-30%;0
+andrea;vlc25;Continuous Complex;0-30%;0
+andrea;vlc26;Continuous Simple;0-30%;1
+oliviero;adobe11;Continuous Simple;0-30%;0
+oliviero;adobe12;Instantaneous;80-180%;0
+oliviero;adobe13;Instantaneous;0-30%;0
+oliviero;adobe14;Immediate;0-30%;0
+oliviero;adobe21;Continuous Simple;80-180%;0
+oliviero;adobe22;Continuous Simple;30-80%;0
+oliviero;notepad11;Immediate;0-30%;0
+oliviero;notepad12;Instantaneous;30-80%;0
+oliviero;notepad13;Instantaneous;30-80%;0
+oliviero;notepad14;Continuous Simple;0-30%;0
+oliviero;notepad21;Instantaneous;180+%;0
+oliviero;notepad22;Instantaneous;30-80%;0
+oliviero;notepad23;Continuous Simple;0-30%;0
+oliviero;notepad24;Continuous Simple;0-30%;0
+oliviero;paint11;Continuous Simple;80-180%;0
+oliviero;paint12;Continuous Complex;30-80%;1
+oliviero;paint13;Continuous Simple;80-180%;0
+oliviero;paint14;Continuous Simple;180+%;1
+oliviero;paint15;Continuous Simple;0-30%;1
+oliviero;paint16;Continuous Complex;0-30%;1
+oliviero;paint21;Immediate;180+%;1
+oliviero;paint22;Continuous Complex;0-30%;1
+oliviero;paint23;Instantaneous;0-30%;0
+oliviero;paint24;Captive;0-30%;0
+oliviero;paint25;Captive;0-30%;0
+oliviero;paint26;Continuous Complex;0-30%;0
+oliviero;paint27;Instantaneous;0-30%;0
+oliviero;paint28;Continuous Complex;0-30%;0
+oliviero;paint29;Immediate;80-180%;1
+oliviero;paint210;Captive;0-30%;0
+oliviero;vlc11;Continuous Simple;0-30%;0
+oliviero;vlc12;Continuous Complex;30-80%;1
+oliviero;vlc13;Instantaneous;30-80%;0
+oliviero;vlc14;Continuous Simple;0-30%;0
+oliviero;vlc21;Continuous Simple;30-80%;0
+oliviero;vlc22;Continuous Simple;0-30%;0
+oliviero;vlc23;Continuous Simple;0-30%;0
+oliviero;vlc24;Instantaneous;0-30%;0
+oliviero;vlc25;Continuous Complex;0-30%;0
+oliviero;vlc26;Continuous Simple;0-30%;0
+alessandro;adobe11;Continuous Simple;0-30%;0
+alessandro;adobe12;Instantaneous;80-180%;0
+alessandro;adobe13;Instantaneous;0-30%;0
+alessandro;adobe14;Immediate;0-30%;0
+alessandro;adobe21;Continuous Simple;80-180%;0
+alessandro;adobe22;Continuous Simple;30-80%;0
+alessandro;notepad11;Immediate;0-30%;0
+alessandro;notepad12;Instantaneous;30-80%;0
+alessandro;notepad13;Instantaneous;30-80%;0
+alessandro;notepad14;Continuous Simple;0-30%;0
+alessandro;notepad21;Instantaneous;180+%;1
+alessandro;notepad22;Instantaneous;30-80%;0
+alessandro;notepad23;Continuous Simple;0-30%;0
+alessandro;notepad24;Continuous Simple;0-30%;0
+alessandro;paint11;Continuous Simple;80-180%;0
+alessandro;paint12;Continuous Complex;30-80%;0
+alessandro;paint13;Continuous Simple;80-180%;0
+alessandro;paint14;Continuous Simple;180+%;0
+alessandro;paint15;Continuous Simple;0-30%;0
+alessandro;paint16;Continuous Complex;0-30%;0
+alessandro;paint21;Immediate;180+%;1
+alessandro;paint22;Continuous Complex;0-30%;0
+alessandro;paint23;Instantaneous;0-30%;0
+alessandro;paint24;Captive;0-30%;0
+alessandro;paint25;Captive;0-30%;0
+alessandro;paint26;Continuous Complex;0-30%;0
+alessandro;paint27;Instantaneous;0-30%;0
+alessandro;paint28;Continuous Complex;0-30%;0
+alessandro;paint29;Immediate;80-180%;1
+alessandro;paint210;Captive;0-30%;0
+alessandro;vlc11;Continuous Simple;0-30%;0
+alessandro;vlc12;Continuous Complex;30-80%;1
+alessandro;vlc13;Instantaneous;30-80%;0
+alessandro;vlc14;Continuous Simple;0-30%;0
+alessandro;vlc21;Continuous Simple;30-80%;0
+alessandro;vlc22;Continuous Simple;0-30%;0
+alessandro;vlc23;Continuous Simple;0-30%;0
+alessandro;vlc24;Instantaneous;0-30%;0
+alessandro;vlc25;Continuous Complex;0-30%;0
+alessandro;vlc26;Continuous Simple;0-30%;0
+mauricios;adobe11;Continuous Simple;0-30%;0
+mauricios;adobe12;Instantaneous;80-180%;0
+mauricios;adobe13;Instantaneous;0-30%;1
+mauricios;adobe14;Immediate;0-30%;0
+mauricios;adobe21;Continuous Simple;80-180%;0
+mauricios;adobe22;Continuous Simple;30-80%;1
+mauricios;notepad11;Immediate;0-30%;0
+mauricios;notepad12;Instantaneous;30-80%;0
+mauricios;notepad13;Instantaneous;30-80%;0
+mauricios;notepad14;Continuous Simple;0-30%;0
+mauricios;notepad21;Instantaneous;180+%;1
+mauricios;notepad22;Instantaneous;30-80%;0
+mauricios;notepad23;Continuous Simple;0-30%;0
+mauricios;notepad24;Continuous Simple;0-30%;0
+mauricios;paint11;Continuous Simple;80-180%;0
+mauricios;paint12;Continuous Complex;30-80%;1
+mauricios;paint13;Continuous Simple;80-180%;0
+mauricios;paint14;Continuous Simple;180+%;1
+mauricios;paint15;Continuous Simple;0-30%;1
+mauricios;paint16;Continuous Complex;0-30%;1
+mauricios;paint21;Immediate;180+%;0
+mauricios;paint22;Continuous Complex;0-30%;1
+mauricios;paint23;Instantaneous;0-30%;0
+mauricios;paint24;Captive;0-30%;0
+mauricios;paint25;Captive;0-30%;0
+mauricios;paint26;Continuous Complex;0-30%;0
+mauricios;paint27;Instantaneous;0-30%;0
+mauricios;paint28;Continuous Complex;0-30%;0
+mauricios;paint29;Immediate;80-180%;1
+mauricios;paint210;Captive;0-30%;0
+mauricios;vlc11;Continuous Simple;0-30%;0
+mauricios;vlc12;Continuous Complex;30-80%;1
+mauricios;vlc13;Instantaneous;30-80%;0
+mauricios;vlc14;Continuous Simple;0-30%;0
+mauricios;vlc21;Continuous Simple;30-80%;0
+mauricios;vlc22;Continuous Simple;0-30%;0
+mauricios;vlc23;Continuous Simple;0-30%;0
+mauricios;vlc24;Instantaneous;0-30%;0
+mauricios;vlc25;Continuous Complex;0-30%;0
+mauricios;vlc26;Continuous Simple;0-30%;0
+federicob;adobe11;Continuous Simple;0-30%;0
+federicob;adobe12;Instantaneous;80-180%;0
+federicob;adobe13;Instantaneous;0-30%;0
+federicob;adobe14;Immediate;0-30%;0
+federicob;adobe21;Continuous Simple;80-180%;0
+federicob;adobe22;Continuous Simple;30-80%;0
+federicob;notepad11;Immediate;0-30%;0
+federicob;notepad12;Instantaneous;30-80%;0
+federicob;notepad13;Instantaneous;30-80%;0
+federicob;notepad14;Continuous Simple;0-30%;1
+federicob;notepad21;Instantaneous;180+%;0
+federicob;notepad22;Instantaneous;30-80%;0
+federicob;notepad23;Continuous Simple;0-30%;0
+federicob;notepad24;Continuous Simple;0-30%;0
+federicob;paint11;Continuous Simple;80-180%;0
+federicob;paint12;Continuous Complex;30-80%;1
+federicob;paint13;Continuous Simple;80-180%;0
+federicob;paint14;Continuous Simple;180+%;1
+federicob;paint15;Continuous Simple;0-30%;1
+federicob;paint16;Continuous Complex;0-30%;1
+federicob;paint21;Immediate;180+%;0
+federicob;paint22;Continuous Complex;0-30%;1
+federicob;paint23;Instantaneous;0-30%;0
+federicob;paint24;Captive;0-30%;0
+federicob;paint25;Captive;0-30%;0
+federicob;paint26;Continuous Complex;0-30%;0
+federicob;paint27;Instantaneous;0-30%;0
+federicob;paint28;Continuous Complex;0-30%;0
+federicob;paint29;Immediate;80-180%;0
+federicob;paint210;Captive;0-30%;0
+federicob;vlc11;Continuous Simple;0-30%;0
+federicob;vlc12;Continuous Complex;30-80%;1
+federicob;vlc13;Instantaneous;30-80%;0
+federicob;vlc14;Continuous Simple;0-30%;0
+federicob;vlc21;Continuous Simple;30-80%;0
+federicob;vlc22;Continuous Simple;0-30%;0
+federicob;vlc23;Continuous Simple;0-30%;0
+federicob;vlc24;Instantaneous;0-30%;0
+federicob;vlc25;Continuous Complex;0-30%;0
+federicob;vlc26;Continuous Simple;0-30%;0
+paoloa;adobe11;Continuous Simple;0-30%;0
+paoloa;adobe12;Instantaneous;80-180%;0
+paoloa;adobe13;Instantaneous;0-30%;0
+paoloa;adobe14;Immediate;0-30%;0
+paoloa;adobe21;Continuous Simple;80-180%;0
+paoloa;adobe22;Continuous Simple;30-80%;0
+paoloa;notepad11;Immediate;0-30%;0
+paoloa;notepad12;Instantaneous;30-80%;1
+paoloa;notepad13;Instantaneous;30-80%;0
+paoloa;notepad14;Continuous Simple;0-30%;0
+paoloa;notepad21;Instantaneous;180+%;0
+paoloa;notepad22;Instantaneous;30-80%;0
+paoloa;notepad23;Continuous Simple;0-30%;0
+paoloa;notepad24;Continuous Simple;0-30%;0
+paoloa;paint11;Continuous Simple;80-180%;0
+paoloa;paint12;Continuous Complex;30-80%;1
+paoloa;paint13;Continuous Simple;80-180%;0
+paoloa;paint14;Continuous Simple;180+%;0
+paoloa;paint15;Continuous Simple;0-30%;1
+paoloa;paint16;Continuous Complex;0-30%;0
+paoloa;paint21;Immediate;180+%;0
+paoloa;paint22;Continuous Complex;0-30%;0
+paoloa;paint23;Instantaneous;0-30%;0
+paoloa;paint24;Captive;0-30%;1
+paoloa;paint25;Captive;0-30%;0
+paoloa;paint26;Continuous Complex;0-30%;1
+paoloa;paint27;Instantaneous;0-30%;0
+paoloa;paint28;Continuous Complex;0-30%;0
+paoloa;paint29;Immediate;80-180%;0
+paoloa;paint210;Captive;0-30%;0
+paoloa;vlc11;Continuous Simple;0-30%;0
+paoloa;vlc12;Continuous Complex;30-80%;1
+paoloa;vlc13;Instantaneous;30-80%;0
+paoloa;vlc14;Continuous Simple;0-30%;0
+paoloa;vlc21;Continuous Simple;30-80%;0
+paoloa;vlc22;Continuous Simple;0-30%;0
+paoloa;vlc23;Continuous Simple;0-30%;0
+paoloa;vlc24;Instantaneous;0-30%;0
+paoloa;vlc25;Continuous Complex;0-30%;0
+paoloa;vlc26;Continuous Simple;0-30%;0
+andream;adobe11;Continuous Simple;0-30%;0
+andream;adobe12;Instantaneous;80-180%;0
+andream;adobe13;Instantaneous;0-30%;0
+andream;adobe14;Immediate;0-30%;0
+andream;adobe21;Continuous Simple;80-180%;0
+andream;adobe22;Continuous Simple;30-80%;0
+andream;notepad11;Immediate;0-30%;0
+andream;notepad12;Instantaneous;30-80%;0
+andream;notepad13;Instantaneous;30-80%;0
+andream;notepad14;Continuous Simple;0-30%;1
+andream;notepad21;Instantaneous;180+%;0
+andream;notepad22;Instantaneous;30-80%;0
+andream;notepad23;Continuous Simple;0-30%;0
+andream;notepad24;Continuous Simple;0-30%;0
+andream;paint11;Continuous Simple;80-180%;0
+andream;paint12;Continuous Complex;30-80%;1
+andream;paint13;Continuous Simple;80-180%;0
+andream;paint14;Continuous Simple;180+%;1
+andream;paint15;Continuous Simple;0-30%;0
+andream;paint16;Continuous Complex;0-30%;0
+andream;paint21;Immediate;180+%;1
+andream;paint22;Continuous Complex;0-30%;1
+andream;paint23;Instantaneous;0-30%;0
+andream;paint24;Captive;0-30%;0
+andream;paint25;Captive;0-30%;0
+andream;paint26;Continuous Complex;0-30%;0
+andream;paint27;Instantaneous;0-30%;0
+andream;paint28;Continuous Complex;0-30%;0
+andream;paint29;Immediate;80-180%;0
+andream;paint210;Captive;0-30%;0
+andream;vlc11;Continuous Simple;0-30%;0
+andream;vlc12;Continuous Complex;30-80%;0
+andream;vlc13;Instantaneous;30-80%;0
+andream;vlc14;Continuous Simple;0-30%;0
+andream;vlc21;Continuous Simple;30-80%;0
+andream;vlc22;Continuous Simple;0-30%;0
+andream;vlc23;Continuous Simple;0-30%;0
+andream;vlc24;Instantaneous;0-30%;0
+andream;vlc25;Continuous Complex;0-30%;0
+andream;vlc26;Continuous Simple;0-30%;0
+francescoc;adobe11;Continuous Simple;0-30%;0
+francescoc;adobe12;Instantaneous;80-180%;0
+francescoc;adobe13;Instantaneous;0-30%;0
+francescoc;adobe14;Immediate;0-30%;0
+francescoc;adobe21;Continuous Simple;80-180%;0
+francescoc;adobe22;Continuous Simple;30-80%;0
+francescoc;notepad11;Immediate;0-30%;0
+francescoc;notepad12;Instantaneous;30-80%;0
+francescoc;notepad13;Instantaneous;30-80%;0
+francescoc;notepad14;Continuous Simple;0-30%;1
+francescoc;notepad21;Instantaneous;180+%;0
+francescoc;notepad22;Instantaneous;30-80%;0
+francescoc;notepad23;Continuous Simple;0-30%;0
+francescoc;notepad24;Continuous Simple;0-30%;0
+francescoc;paint11;Continuous Simple;80-180%;1
+francescoc;paint12;Continuous Complex;30-80%;1
+francescoc;paint13;Continuous Simple;80-180%;1
+francescoc;paint14;Continuous Simple;180+%;1
+francescoc;paint15;Continuous Simple;0-30%;1
+francescoc;paint16;Continuous Complex;0-30%;1
+francescoc;paint21;Immediate;180+%;0
+francescoc;paint22;Continuous Complex;0-30%;0
+francescoc;paint23;Instantaneous;0-30%;0
+francescoc;paint24;Captive;0-30%;0
+francescoc;paint25;Captive;0-30%;0
+francescoc;paint26;Continuous Complex;0-30%;0
+francescoc;paint27;Instantaneous;0-30%;0
+francescoc;paint28;Continuous Complex;0-30%;0
+francescoc;paint29;Immediate;80-180%;0
+francescoc;paint210;Captive;0-30%;0
+francescoc;vlc11;Continuous Simple;0-30%;0
+francescoc;vlc12;Continuous Complex;30-80%;1
+francescoc;vlc13;Instantaneous;30-80%;0
+francescoc;vlc14;Continuous Simple;0-30%;0
+francescoc;vlc21;Continuous Simple;30-80%;0
+francescoc;vlc22;Continuous Simple;0-30%;0
+francescoc;vlc23;Continuous Simple;0-30%;0
+francescoc;vlc24;Instantaneous;0-30%;0
+francescoc;vlc25;Continuous Complex;0-30%;0
+francescoc;vlc26;Continuous Simple;0-30%;0
+marcov;adobe11;Continuous Simple;0-30%;0
+marcov;adobe12;Instantaneous;80-180%;0
+marcov;adobe13;Instantaneous;0-30%;0
+marcov;adobe14;Immediate;0-30%;0
+marcov;adobe21;Continuous Simple;80-180%;0
+marcov;adobe22;Continuous Simple;30-80%;0
+marcov;notepad11;Immediate;0-30%;0
+marcov;notepad12;Instantaneous;30-80%;0
+marcov;notepad13;Instantaneous;30-80%;0
+marcov;notepad14;Continuous Simple;0-30%;0
+marcov;notepad21;Instantaneous;180+%;0
+marcov;notepad22;Instantaneous;30-80%;0
+marcov;notepad23;Continuous Simple;0-30%;0
+marcov;notepad24;Continuous Simple;0-30%;0
+marcov;paint11;Continuous Simple;80-180%;0
+marcov;paint12;Continuous Complex;30-80%;0
+marcov;paint13;Continuous Simple;80-180%;0
+marcov;paint14;Continuous Simple;180+%;1
+marcov;paint15;Continuous Simple;0-30%;1
+marcov;paint16;Continuous Complex;0-30%;1
+marcov;paint21;Immediate;180+%;1
+marcov;paint22;Continuous Complex;0-30%;1
+marcov;paint23;Instantaneous;0-30%;0
+marcov;paint24;Captive;0-30%;0
+marcov;paint25;Captive;0-30%;0
+marcov;paint26;Continuous Complex;0-30%;0
+marcov;paint27;Instantaneous;0-30%;0
+marcov;paint28;Continuous Complex;0-30%;0
+marcov;paint29;Immediate;80-180%;0
+marcov;paint210;Captive;0-30%;0
+marcov;vlc11;Continuous Simple;0-30%;0
+marcov;vlc12;Continuous Complex;30-80%;1
+marcov;vlc13;Instantaneous;30-80%;0
+marcov;vlc14;Continuous Simple;0-30%;0
+marcov;vlc21;Continuous Simple;30-80%;0
+marcov;vlc22;Continuous Simple;0-30%;0
+marcov;vlc23;Continuous Simple;0-30%;0
+marcov;vlc24;Instantaneous;0-30%;0
+marcov;vlc25;Continuous Complex;0-30%;0
+marcov;vlc26;Continuous Simple;0-30%;0
+michelec;adobe11;Continuous Simple;0-30%;0
+michelec;adobe12;Instantaneous;80-180%;0
+michelec;adobe13;Instantaneous;0-30%;0
+michelec;adobe14;Immediate;0-30%;0
+michelec;adobe21;Continuous Simple;80-180%;0
+michelec;adobe22;Continuous Simple;30-80%;0
+michelec;notepad11;Immediate;0-30%;0
+michelec;notepad12;Instantaneous;30-80%;0
+michelec;notepad13;Instantaneous;30-80%;0
+michelec;notepad14;Continuous Simple;0-30%;0
+michelec;notepad21;Instantaneous;180+%;0
+michelec;notepad22;Instantaneous;30-80%;0
+michelec;notepad23;Continuous Simple;0-30%;0
+michelec;notepad24;Continuous Simple;0-30%;0
+michelec;paint11;Continuous Simple;80-180%;0
+michelec;paint12;Continuous Complex;30-80%;1
+michelec;paint13;Continuous Simple;80-180%;0
+michelec;paint14;Continuous Simple;180+%;0
+michelec;paint15;Continuous Simple;0-30%;0
+michelec;paint16;Continuous Complex;0-30%;1
+michelec;paint21;Immediate;180+%;1
+michelec;paint22;Continuous Complex;0-30%;1
+michelec;paint23;Instantaneous;0-30%;0
+michelec;paint24;Captive;0-30%;1
+michelec;paint25;Captive;0-30%;1
+michelec;paint26;Continuous Complex;0-30%;0
+michelec;paint27;Instantaneous;0-30%;0
+michelec;paint28;Continuous Complex;0-30%;0
+michelec;paint29;Immediate;80-180%;1
+michelec;paint210;Captive;0-30%;0
+michelec;vlc11;Continuous Simple;0-30%;1
+michelec;vlc12;Continuous Complex;30-80%;1
+michelec;vlc13;Instantaneous;30-80%;0
+michelec;vlc14;Continuous Simple;0-30%;0
+michelec;vlc21;Continuous Simple;30-80%;0
+michelec;vlc22;Continuous Simple;0-30%;0
+michelec;vlc23;Continuous Simple;0-30%;0
+michelec;vlc24;Instantaneous;0-30%;0
+michelec;vlc25;Continuous Complex;0-30%;0
+michelec;vlc26;Continuous Simple;0-30%;0
+alessandrob;adobe11;Continuous Simple;0-30%;0
+alessandrob;adobe12;Instantaneous;80-180%;0
+alessandrob;adobe13;Instantaneous;0-30%;0
+alessandrob;adobe14;Immediate;0-30%;0
+alessandrob;adobe21;Continuous Simple;80-180%;0
+alessandrob;adobe22;Continuous Simple;30-80%;0
+alessandrob;notepad11;Immediate;0-30%;1
+alessandrob;notepad12;Instantaneous;30-80%;0
+alessandrob;notepad13;Instantaneous;30-80%;0
+alessandrob;notepad14;Continuous Simple;0-30%;1
+alessandrob;notepad21;Instantaneous;180+%;0
+alessandrob;notepad22;Instantaneous;30-80%;0
+alessandrob;notepad23;Continuous Simple;0-30%;0
+alessandrob;notepad24;Continuous Simple;0-30%;0
+alessandrob;paint11;Continuous Simple;80-180%;0
+alessandrob;paint12;Continuous Complex;30-80%;0
+alessandrob;paint13;Continuous Simple;80-180%;0
+alessandrob;paint14;Continuous Simple;180+%;1
+alessandrob;paint15;Continuous Simple;0-30%;1
+alessandrob;paint16;Continuous Complex;0-30%;1
+alessandrob;paint21;Immediate;180+%;0
+alessandrob;paint22;Continuous Complex;0-30%;0
+alessandrob;paint23;Instantaneous;0-30%;0
+alessandrob;paint24;Captive;0-30%;0
+alessandrob;paint25;Captive;0-30%;0
+alessandrob;paint26;Continuous Complex;0-30%;0
+alessandrob;paint27;Instantaneous;0-30%;0
+alessandrob;paint28;Continuous Complex;0-30%;0
+alessandrob;paint29;Immediate;80-180%;1
+alessandrob;paint210;Captive;0-30%;0
+alessandrob;vlc11;Continuous Simple;0-30%;0
+alessandrob;vlc12;Continuous Complex;30-80%;1
+alessandrob;vlc13;Instantaneous;30-80%;0
+alessandrob;vlc14;Continuous Simple;0-30%;0
+alessandrob;vlc21;Continuous Simple;30-80%;0
+alessandrob;vlc22;Continuous Simple;0-30%;0
+alessandrob;vlc23;Continuous Simple;0-30%;0
+alessandrob;vlc24;Instantaneous;0-30%;0
+alessandrob;vlc25;Continuous Complex;0-30%;0
+alessandrob;vlc26;Continuous Simple;0-30%;0
+annaf;adobe11;Continuous Simple;0-30%;0
+annaf;adobe12;Instantaneous;80-180%;0
+annaf;adobe13;Instantaneous;0-30%;0
+annaf;adobe14;Immediate;0-30%;0
+annaf;adobe21;Continuous Simple;80-180%;0
+annaf;adobe22;Continuous Simple;30-80%;0
+annaf;notepad11;Immediate;0-30%;0
+annaf;notepad12;Instantaneous;30-80%;0
+annaf;notepad13;Instantaneous;30-80%;0
+annaf;notepad14;Continuous Simple;0-30%;0
+annaf;notepad21;Instantaneous;180+%;0
+annaf;notepad22;Instantaneous;30-80%;0
+annaf;notepad23;Continuous Simple;0-30%;0
+annaf;notepad24;Continuous Simple;0-30%;0
+annaf;paint11;Continuous Simple;80-180%;0
+annaf;paint12;Continuous Complex;30-80%;1
+annaf;paint13;Continuous Simple;80-180%;0
+annaf;paint14;Continuous Simple;180+%;1
+annaf;paint15;Continuous Simple;0-30%;0
+annaf;paint16;Continuous Complex;0-30%;1
+annaf;paint21;Immediate;180+%;1
+annaf;paint22;Continuous Complex;0-30%;1
+annaf;paint23;Instantaneous;0-30%;0
+annaf;paint24;Captive;0-30%;0
+annaf;paint25;Captive;0-30%;0
+annaf;paint26;Continuous Complex;0-30%;0
+annaf;paint27;Instantaneous;0-30%;0
+annaf;paint28;Continuous Complex;0-30%;0
+annaf;paint29;Immediate;80-180%;0
+annaf;paint210;Captive;0-30%;0
+annaf;vlc11;Continuous Simple;0-30%;1
+annaf;vlc12;Continuous Complex;30-80%;1
+annaf;vlc13;Instantaneous;30-80%;1
+annaf;vlc14;Continuous Simple;0-30%;0
+annaf;vlc21;Continuous Simple;30-80%;0
+annaf;vlc22;Continuous Simple;0-30%;0
+annaf;vlc23;Continuous Simple;0-30%;0
+annaf;vlc24;Instantaneous;0-30%;0
+annaf;vlc25;Continuous Complex;0-30%;0
+annaf;vlc26;Continuous Simple;0-30%;0
+alessandrot;adobe11;Continuous Simple;0-30%;0
+alessandrot;adobe12;Instantaneous;80-180%;0
+alessandrot;adobe13;Instantaneous;0-30%;0
+alessandrot;adobe14;Immediate;0-30%;0
+alessandrot;adobe21;Continuous Simple;80-180%;0
+alessandrot;adobe22;Continuous Simple;30-80%;0
+alessandrot;notepad11;Immediate;0-30%;0
+alessandrot;notepad12;Instantaneous;30-80%;0
+alessandrot;notepad13;Instantaneous;30-80%;0
+alessandrot;notepad14;Continuous Simple;0-30%;0
+alessandrot;notepad21;Instantaneous;180+%;0
+alessandrot;notepad22;Instantaneous;30-80%;0
+alessandrot;notepad23;Continuous Simple;0-30%;0
+alessandrot;notepad24;Continuous Simple;0-30%;0
+alessandrot;paint11;Continuous Simple;80-180%;0
+alessandrot;paint12;Continuous Complex;30-80%;1
+alessandrot;paint13;Continuous Simple;80-180%;0
+alessandrot;paint14;Continuous Simple;180+%;1
+alessandrot;paint15;Continuous Simple;0-30%;0
+alessandrot;paint16;Continuous Complex;0-30%;0
+alessandrot;paint21;Immediate;180+%;0
+alessandrot;paint22;Continuous Complex;0-30%;1
+alessandrot;paint23;Instantaneous;0-30%;0
+alessandrot;paint24;Captive;0-30%;0
+alessandrot;paint25;Captive;0-30%;0
+alessandrot;paint26;Continuous Complex;0-30%;0
+alessandrot;paint27;Instantaneous;0-30%;0
+alessandrot;paint28;Continuous Complex;0-30%;0
+alessandrot;paint29;Immediate;80-180%;0
+alessandrot;paint210;Captive;0-30%;0
+alessandrot;vlc11;Continuous Simple;0-30%;0
+alessandrot;vlc12;Continuous Complex;30-80%;1
+alessandrot;vlc13;Instantaneous;30-80%;0
+alessandrot;vlc14;Continuous Simple;0-30%;0
+alessandrot;vlc21;Continuous Simple;30-80%;0
+alessandrot;vlc22;Continuous Simple;0-30%;0
+alessandrot;vlc23;Continuous Simple;0-30%;0
+alessandrot;vlc24;Instantaneous;0-30%;0
+alessandrot;vlc25;Continuous Complex;0-30%;0
+alessandrot;vlc26;Continuous Simple;0-30%;0
+ilariap;adobe11;Continuous Simple;0-30%;0
+ilariap;adobe12;Instantaneous;80-180%;1
+ilariap;adobe13;Instantaneous;0-30%;0
+ilariap;adobe14;Immediate;0-30%;0
+ilariap;adobe21;Continuous Simple;80-180%;0
+ilariap;adobe22;Continuous Simple;30-80%;0
+ilariap;notepad11;Immediate;0-30%;0
+ilariap;notepad12;Instantaneous;30-80%;0
+ilariap;notepad13;Instantaneous;30-80%;1
+ilariap;notepad14;Continuous Simple;0-30%;0
+ilariap;notepad21;Instantaneous;180+%;0
+ilariap;notepad22;Instantaneous;30-80%;0
+ilariap;notepad23;Continuous Simple;0-30%;0
+ilariap;notepad24;Continuous Simple;0-30%;0
+ilariap;paint11;Continuous Simple;80-180%;0
+ilariap;paint12;Continuous Complex;30-80%;1
+ilariap;paint13;Continuous Simple;80-180%;0
+ilariap;paint14;Continuous Simple;180+%;1
+ilariap;paint15;Continuous Simple;0-30%;1
+ilariap;paint16;Continuous Complex;0-30%;1
+ilariap;paint21;Immediate;180+%;0
+ilariap;paint22;Continuous Complex;0-30%;0
+ilariap;paint23;Instantaneous;0-30%;0
+ilariap;paint24;Captive;0-30%;0
+ilariap;paint25;Captive;0-30%;0
+ilariap;paint26;Continuous Complex;0-30%;0
+ilariap;paint27;Instantaneous;0-30%;0
+ilariap;paint28;Continuous Complex;0-30%;0
+ilariap;paint29;Immediate;80-180%;0
+ilariap;paint210;Captive;0-30%;0
+ilariap;vlc11;Continuous Simple;0-30%;0
+ilariap;vlc12;Continuous Complex;30-80%;1
+ilariap;vlc13;Instantaneous;30-80%;0
+ilariap;vlc14;Continuous Simple;0-30%;0
+ilariap;vlc21;Continuous Simple;30-80%;0
+ilariap;vlc22;Continuous Simple;0-30%;0
+ilariap;vlc23;Continuous Simple;0-30%;0
+ilariap;vlc24;Instantaneous;0-30%;0
+ilariap;vlc25;Continuous Complex;0-30%;0
+ilariap;vlc26;Continuous Simple;0-30%;0
+riccardop;adobe11;Continuous Simple;0-30%;0
+riccardop;adobe12;Instantaneous;80-180%;0
+riccardop;adobe13;Instantaneous;0-30%;0
+riccardop;adobe14;Immediate;0-30%;0
+riccardop;adobe21;Continuous Simple;80-180%;0
+riccardop;adobe22;Continuous Simple;30-80%;0
+riccardop;notepad11;Immediate;0-30%;0
+riccardop;notepad12;Instantaneous;30-80%;0
+riccardop;notepad13;Instantaneous;30-80%;0
+riccardop;notepad14;Continuous Simple;0-30%;0
+riccardop;notepad21;Instantaneous;180+%;0
+riccardop;notepad22;Instantaneous;30-80%;0
+riccardop;notepad23;Continuous Simple;0-30%;0
+riccardop;notepad24;Continuous Simple;0-30%;0
+riccardop;paint11;Continuous Simple;80-180%;0
+riccardop;paint12;Continuous Complex;30-80%;1
+riccardop;paint13;Continuous Simple;80-180%;0
+riccardop;paint14;Continuous Simple;180+%;1
+riccardop;paint15;Continuous Simple;0-30%;1
+riccardop;paint16;Continuous Complex;0-30%;1
+riccardop;paint21;Immediate;180+%;0
+riccardop;paint22;Continuous Complex;0-30%;0
+riccardop;paint23;Instantaneous;0-30%;0
+riccardop;paint24;Captive;0-30%;1
+riccardop;paint25;Captive;0-30%;1
+riccardop;paint26;Continuous Complex;0-30%;1
+riccardop;paint27;Instantaneous;0-30%;0
+riccardop;paint28;Continuous Complex;0-30%;0
+riccardop;paint29;Immediate;80-180%;0
+riccardop;paint210;Captive;0-30%;0
+riccardop;vlc11;Continuous Simple;0-30%;0
+riccardop;vlc12;Continuous Complex;30-80%;1
+riccardop;vlc13;Instantaneous;30-80%;0
+riccardop;vlc14;Continuous Simple;0-30%;0
+riccardop;vlc21;Continuous Simple;30-80%;0
+riccardop;vlc22;Continuous Simple;0-30%;0
+riccardop;vlc23;Continuous Simple;0-30%;0
+riccardop;vlc24;Instantaneous;0-30%;0
+riccardop;vlc25;Continuous Complex;0-30%;0
+riccardop;vlc26;Continuous Simple;0-30%;0
+marcof;adobe11;Continuous Simple;0-30%;0
+marcof;adobe12;Instantaneous;80-180%;0
+marcof;adobe13;Instantaneous;0-30%;0
+marcof;adobe14;Immediate;0-30%;0
+marcof;adobe21;Continuous Simple;80-180%;0
+marcof;adobe22;Continuous Simple;30-80%;0
+marcof;notepad11;Immediate;0-30%;0
+marcof;notepad12;Instantaneous;30-80%;0
+marcof;notepad13;Instantaneous;30-80%;0
+marcof;notepad14;Continuous Simple;0-30%;0
+marcof;notepad21;Instantaneous;180+%;0
+marcof;notepad22;Instantaneous;30-80%;0
+marcof;notepad23;Continuous Simple;0-30%;0
+marcof;notepad24;Continuous Simple;0-30%;0
+marcof;paint11;Continuous Simple;80-180%;0
+marcof;paint12;Continuous Complex;30-80%;0
+marcof;paint13;Continuous Simple;80-180%;0
+marcof;paint14;Continuous Simple;180+%;0
+marcof;paint15;Continuous Simple;0-30%;1
+marcof;paint16;Continuous Complex;0-30%;1
+marcof;paint21;Immediate;180+%;0
+marcof;paint22;Continuous Complex;0-30%;0
+marcof;paint23;Instantaneous;0-30%;0
+marcof;paint24;Captive;0-30%;0
+marcof;paint25;Captive;0-30%;0
+marcof;paint26;Continuous Complex;0-30%;0
+marcof;paint27;Instantaneous;0-30%;0
+marcof;paint28;Continuous Complex;0-30%;0
+marcof;paint29;Immediate;80-180%;0
+marcof;paint210;Captive;0-30%;0
+marcof;vlc11;Continuous Simple;0-30%;0
+marcof;vlc12;Continuous Complex;30-80%;0
+marcof;vlc13;Instantaneous;30-80%;0
+marcof;vlc14;Continuous Simple;0-30%;0
+marcof;vlc21;Continuous Simple;30-80%;0
+marcof;vlc22;Continuous Simple;0-30%;0
+marcof;vlc23;Continuous Simple;0-30%;0
+marcof;vlc24;Instantaneous;0-30%;0
+marcof;vlc25;Continuous Complex;0-30%;0
+marcof;vlc26;Continuous Simple;0-30%;0
+silviac;adobe11;Continuous Simple;0-30%;0
+silviac;adobe12;Instantaneous;80-180%;0
+silviac;adobe13;Instantaneous;0-30%;0
+silviac;adobe14;Immediate;0-30%;0
+silviac;adobe21;Continuous Simple;80-180%;0
+silviac;adobe22;Continuous Simple;30-80%;0
+silviac;notepad11;Immediate;0-30%;0
+silviac;notepad12;Instantaneous;30-80%;0
+silviac;notepad13;Instantaneous;30-80%;0
+silviac;notepad14;Continuous Simple;0-30%;1
+silviac;notepad21;Instantaneous;180+%;0
+silviac;notepad22;Instantaneous;30-80%;0
+silviac;notepad23;Continuous Simple;0-30%;0
+silviac;notepad24;Continuous Simple;0-30%;0
+silviac;paint11;Continuous Simple;80-180%;0
+silviac;paint12;Continuous Complex;30-80%;0
+silviac;paint13;Continuous Simple;80-180%;1
+silviac;paint14;Continuous Simple;180+%;0
+silviac;paint15;Continuous Simple;0-30%;0
+silviac;paint16;Continuous Complex;0-30%;0
+silviac;paint21;Immediate;180+%;0
+silviac;paint22;Continuous Complex;0-30%;0
+silviac;paint23;Instantaneous;0-30%;1
+silviac;paint24;Captive;0-30%;0
+silviac;paint25;Captive;0-30%;0
+silviac;paint26;Continuous Complex;0-30%;0
+silviac;paint27;Instantaneous;0-30%;0
+silviac;paint28;Continuous Complex;0-30%;0
+silviac;paint29;Immediate;80-180%;1
+silviac;paint210;Captive;0-30%;0
+silviac;vlc11;Continuous Simple;0-30%;0
+silviac;vlc12;Continuous Complex;30-80%;0
+silviac;vlc13;Instantaneous;30-80%;0
+silviac;vlc14;Continuous Simple;0-30%;0
+silviac;vlc21;Continuous Simple;30-80%;0
+silviac;vlc22;Continuous Simple;0-30%;0
+silviac;vlc23;Continuous Simple;0-30%;0
+silviac;vlc24;Instantaneous;0-30%;0
+silviac;vlc25;Continuous Complex;0-30%;0
+silviac;vlc26;Continuous Simple;0-30%;0
+matteoo;adobe11;Continuous Simple;0-30%;0
+matteoo;adobe12;Instantaneous;80-180%;0
+matteoo;adobe13;Instantaneous;0-30%;0
+matteoo;adobe14;Immediate;0-30%;0
+matteoo;adobe21;Continuous Simple;80-180%;0
+matteoo;adobe22;Continuous Simple;30-80%;0
+matteoo;notepad11;Immediate;0-30%;0
+matteoo;notepad12;Instantaneous;30-80%;1
+matteoo;notepad13;Instantaneous;30-80%;0
+matteoo;notepad14;Continuous Simple;0-30%;0
+matteoo;notepad21;Instantaneous;180+%;0
+matteoo;notepad22;Instantaneous;30-80%;1
+matteoo;notepad23;Continuous Simple;0-30%;0
+matteoo;notepad24;Continuous Simple;0-30%;0
+matteoo;paint11;Continuous Simple;80-180%;1
+matteoo;paint12;Continuous Complex;30-80%;0
+matteoo;paint13;Continuous Simple;80-180%;1
+matteoo;paint14;Continuous Simple;180+%;0
+matteoo;paint15;Continuous Simple;0-30%;0
+matteoo;paint16;Continuous Complex;0-30%;0
+matteoo;paint21;Immediate;180+%;0
+matteoo;paint22;Continuous Complex;0-30%;1
+matteoo;paint23;Instantaneous;0-30%;0
+matteoo;paint24;Captive;0-30%;0
+matteoo;paint25;Captive;0-30%;0
+matteoo;paint26;Continuous Complex;0-30%;0
+matteoo;paint27;Instantaneous;0-30%;0
+matteoo;paint28;Continuous Complex;0-30%;0
+matteoo;paint29;Immediate;80-180%;0
+matteoo;paint210;Captive;0-30%;0
+matteoo;vlc11;Continuous Simple;0-30%;1
+matteoo;vlc12;Continuous Complex;30-80%;1
+matteoo;vlc13;Instantaneous;30-80%;0
+matteoo;vlc14;Continuous Simple;0-30%;0
+matteoo;vlc21;Continuous Simple;30-80%;1
+matteoo;vlc22;Continuous Simple;0-30%;0
+matteoo;vlc23;Continuous Simple;0-30%;0
+matteoo;vlc24;Instantaneous;0-30%;0
+matteoo;vlc25;Continuous Complex;0-30%;0
+matteoo;vlc26;Continuous Simple;0-30%;0
+antoniov;adobe11;Continuous Simple;0-30%;0
+antoniov;adobe12;Instantaneous;80-180%;0
+antoniov;adobe13;Instantaneous;0-30%;0
+antoniov;adobe14;Immediate;0-30%;0
+antoniov;adobe21;Continuous Simple;80-180%;0
+antoniov;adobe22;Continuous Simple;30-80%;0
+antoniov;notepad11;Immediate;0-30%;0
+antoniov;notepad12;Instantaneous;30-80%;0
+antoniov;notepad13;Instantaneous;30-80%;0
+antoniov;notepad14;Continuous Simple;0-30%;1
+antoniov;notepad21;Instantaneous;180+%;0
+antoniov;notepad22;Instantaneous;30-80%;0
+antoniov;notepad23;Continuous Simple;0-30%;0
+antoniov;notepad24;Continuous Simple;0-30%;0
+antoniov;paint11;Continuous Simple;80-180%;0
+antoniov;paint12;Continuous Complex;30-80%;1
+antoniov;paint13;Continuous Simple;80-180%;0
+antoniov;paint14;Continuous Simple;180+%;1
+antoniov;paint15;Continuous Simple;0-30%;1
+antoniov;paint16;Continuous Complex;0-30%;1
+antoniov;paint21;Immediate;180+%;1
+antoniov;paint22;Continuous Complex;0-30%;0
+antoniov;paint23;Instantaneous;0-30%;0
+antoniov;paint24;Captive;0-30%;0
+antoniov;paint25;Captive;0-30%;0
+antoniov;paint26;Continuous Complex;0-30%;0
+antoniov;paint27;Instantaneous;0-30%;0
+antoniov;paint28;Continuous Complex;0-30%;1
+antoniov;paint29;Immediate;80-180%;1
+antoniov;paint210;Captive;0-30%;0
+antoniov;vlc11;Continuous Simple;0-30%;0
+antoniov;vlc12;Continuous Complex;30-80%;1
+antoniov;vlc13;Instantaneous;30-80%;0
+antoniov;vlc14;Continuous Simple;0-30%;0
+antoniov;vlc21;Continuous Simple;30-80%;0
+antoniov;vlc22;Continuous Simple;0-30%;0
+antoniov;vlc23;Continuous Simple;0-30%;0
+antoniov;vlc24;Instantaneous;0-30%;0
+antoniov;vlc25;Continuous Complex;0-30%;0
+antoniov;vlc26;Continuous Simple;0-30%;0
+paolon;adobe11;Continuous Simple;0-30%;0
+paolon;adobe12;Instantaneous;80-180%;1
+paolon;adobe13;Instantaneous;0-30%;1
+paolon;adobe14;Immediate;0-30%;0
+paolon;adobe21;Continuous Simple;80-180%;0
+paolon;adobe22;Continuous Simple;30-80%;0
+paolon;notepad11;Immediate;0-30%;0
+paolon;notepad12;Instantaneous;30-80%;0
+paolon;notepad13;Instantaneous;30-80%;0
+paolon;notepad14;Continuous Simple;0-30%;0
+paolon;notepad21;Instantaneous;180+%;0
+paolon;notepad22;Instantaneous;30-80%;0
+paolon;notepad23;Continuous Simple;0-30%;0
+paolon;notepad24;Continuous Simple;0-30%;0
+paolon;paint11;Continuous Simple;80-180%;0
+paolon;paint12;Continuous Complex;30-80%;0
+paolon;paint13;Continuous Simple;80-180%;0
+paolon;paint14;Continuous Simple;180+%;0
+paolon;paint15;Continuous Simple;0-30%;0
+paolon;paint16;Continuous Complex;0-30%;0
+paolon;paint21;Immediate;180+%;1
+paolon;paint22;Continuous Complex;0-30%;0
+paolon;paint23;Instantaneous;0-30%;0
+paolon;paint24;Captive;0-30%;0
+paolon;paint25;Captive;0-30%;0
+paolon;paint26;Continuous Complex;0-30%;0
+paolon;paint27;Instantaneous;0-30%;0
+paolon;paint28;Continuous Complex;0-30%;0
+paolon;paint29;Immediate;80-180%;0
+paolon;paint210;Captive;0-30%;0
+paolon;vlc11;Continuous Simple;0-30%;0
+paolon;vlc12;Continuous Complex;30-80%;0
+paolon;vlc13;Instantaneous;30-80%;0
+paolon;vlc14;Continuous Simple;0-30%;0
+paolon;vlc21;Continuous Simple;30-80%;0
+paolon;vlc22;Continuous Simple;0-30%;0
+paolon;vlc23;Continuous Simple;0-30%;0
+paolon;vlc24;Instantaneous;0-30%;0
+paolon;vlc25;Continuous Complex;0-30%;0
+paolon;vlc26;Continuous Simple;0-30%;0
+francescag;adobe11;Continuous Simple;0-30%;0
+francescag;adobe12;Instantaneous;80-180%;0
+francescag;adobe13;Instantaneous;0-30%;0
+francescag;adobe14;Immediate;0-30%;0
+francescag;adobe21;Continuous Simple;80-180%;1
+francescag;adobe22;Continuous Simple;30-80%;0
+francescag;notepad11;Immediate;0-30%;0
+francescag;notepad12;Instantaneous;30-80%;0
+francescag;notepad13;Instantaneous;30-80%;0
+francescag;notepad14;Continuous Simple;0-30%;1
+francescag;notepad21;Instantaneous;180+%;0
+francescag;notepad22;Instantaneous;30-80%;0
+francescag;notepad23;Continuous Simple;0-30%;0
+francescag;notepad24;Continuous Simple;0-30%;0
+francescag;paint11;Continuous Simple;80-180%;1
+francescag;paint12;Continuous Complex;30-80%;0
+francescag;paint13;Continuous Simple;80-180%;1
+francescag;paint14;Continuous Simple;180+%;0
+francescag;paint15;Continuous Simple;0-30%;0
+francescag;paint16;Continuous Complex;0-30%;0
+francescag;paint21;Immediate;180+%;0
+francescag;paint22;Continuous Complex;0-30%;1
+francescag;paint23;Instantaneous;0-30%;0
+francescag;paint24;Captive;0-30%;0
+francescag;paint25;Captive;0-30%;0
+francescag;paint26;Continuous Complex;0-30%;0
+francescag;paint27;Instantaneous;0-30%;0
+francescag;paint28;Continuous Complex;0-30%;0
+francescag;paint29;Immediate;80-180%;1
+francescag;paint210;Captive;0-30%;0
+francescag;vlc11;Continuous Simple;0-30%;1
+francescag;vlc12;Continuous Complex;30-80%;1
+francescag;vlc13;Instantaneous;30-80%;0
+francescag;vlc14;Continuous Simple;0-30%;0
+francescag;vlc21;Continuous Simple;30-80%;0
+francescag;vlc22;Continuous Simple;0-30%;0
+francescag;vlc23;Continuous Simple;0-30%;0
+francescag;vlc24;Instantaneous;0-30%;0
+francescag;vlc25;Continuous Complex;0-30%;1
+francescag;vlc26;Continuous Simple;0-30%;1
