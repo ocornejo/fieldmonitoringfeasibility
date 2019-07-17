@@ -153,6 +153,25 @@ inst_cpu[nrow(inst_cpu) + 1,] = list("90","base_time", cpu90Load[cpu90Load$base_
 inst_cpu[nrow(inst_cpu) + 1,] = list("90","monitored", cpu90OHLoad[cpu90OHLoad$base_time.category == "Instantaneous", ]$percentageSlowActions, 
                                      cpu90OHLoad[cpu90OHLoad$base_time.category == "Instantaneous", ]$slowActions)
 
+instCpuBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+instCpuBase[nrow(instCpuBase) + 1,] = list(0, 0)
+instCpuBase[nrow(instCpuBase) + 1,] = list(60, cpu60Load[cpu60Load$base_time.category == "Instantaneous", ]$slowActions)
+instCpuBase[nrow(instCpuBase) + 1,] = list(75,cpu75Load[cpu75Load$base_time.category == "Instantaneous", ]$slowActions)
+instCpuBase[nrow(instCpuBase) + 1,] = list(90, cpu90Load[cpu90Load$base_time.category == "Instantaneous", ]$slowActions)
+instCpuOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+instCpuOH[nrow(instCpuOH) + 1,] = list(0, cpuNoLoad[cpuNoLoad$base_time.category == "Instantaneous", ]$slowActions)
+instCpuOH[nrow(instCpuOH) + 1,] = list(60, cpu60OHLoad[cpu60OHLoad$base_time.category == "Instantaneous", ]$slowActions)
+instCpuOH[nrow(instCpuOH) + 1,] = list(75,cpu75OHLoad[cpu75OHLoad$base_time.category == "Instantaneous", ]$slowActions)
+instCpuOH[nrow(instCpuOH) + 1,] = list(90, cpu90OHLoad[cpu90OHLoad$base_time.category == "Instantaneous", ]$slowActions)
+
+lminstBase <- lm(slowactions ~ load, data=instCpuBase)
+lminstOH <- lm(slowactions ~ load, data=instCpuOH)
+summary(lminstBase)
+summary(lminstOH)
+instEqual = (100* ((lminstOH$coefficients[2] - lminstBase$coefficients[2]) / lminstBase$coefficients[2]))
+
+
+
 imm_cpu  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 imm_cpu[nrow(imm_cpu) + 1,] = list("0","base_time", 0, 0)
 imm_cpu[nrow(imm_cpu) + 1,] = list("0","monitored", cpuNoLoad[cpuNoLoad$base_time.category == "Immediate", ]$percentageSlowActions, 
@@ -169,6 +188,26 @@ imm_cpu[nrow(imm_cpu) + 1,] = list("90","base_time", cpu90Load[cpu90Load$base_ti
                                    cpu90Load[cpu90Load$base_time.category == "Immediate", ]$slowActions)
 imm_cpu[nrow(imm_cpu) + 1,] = list("90","monitored", cpu90OHLoad[cpu90OHLoad$base_time.category == "Immediate", ]$percentageSlowActions, 
                                    cpu90OHLoad[cpu90OHLoad$base_time.category == "Immediate", ]$slowActions)
+
+
+immCpuBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+immCpuBase[nrow(immCpuBase) + 1,] = list(0, 0)
+immCpuBase[nrow(immCpuBase) + 1,] = list(60, cpu60Load[cpu60Load$base_time.category == "Immediate", ]$slowActions)
+immCpuBase[nrow(immCpuBase) + 1,] = list(75,cpu75Load[cpu75Load$base_time.category == "Immediate", ]$slowActions)
+immCpuBase[nrow(immCpuBase) + 1,] = list(90, cpu90Load[cpu90Load$base_time.category == "Immediate", ]$slowActions)
+immCpuOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+immCpuOH[nrow(immCpuOH) + 1,] = list(0, cpuNoLoad[cpuNoLoad$base_time.category == "Immediate", ]$slowActions)
+immCpuOH[nrow(immCpuOH) + 1,] = list(60, cpu60OHLoad[cpu60OHLoad$base_time.category == "Immediate", ]$slowActions)
+immCpuOH[nrow(immCpuOH) + 1,] = list(75,cpu75OHLoad[cpu75OHLoad$base_time.category == "Immediate", ]$slowActions)
+immCpuOH[nrow(immCpuOH) + 1,] = list(90, cpu90OHLoad[cpu90OHLoad$base_time.category == "Immediate", ]$slowActions)
+
+lmimmBase <- lm(slowactions ~ load, data=immCpuBase)
+lmimmOH <- lm(slowactions ~ load, data=immCpuOH)
+summary(lmimmBase)
+summary(lmimmOH)
+immEqual = (100* ((lmimmOH$coefficients[2] - lmimmBase$coefficients[2]) / lmimmBase$coefficients[2]))
+
+
 
 cs_cpu  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 cs_cpu[nrow(cs_cpu) + 1,] = list("0","base_time", 0, 0)
@@ -187,6 +226,25 @@ cs_cpu[nrow(cs_cpu) + 1,] = list("90","base_time", cpu90Load[cpu90Load$base_time
 cs_cpu[nrow(cs_cpu) + 1,] = list("90","monitored", cpu90OHLoad[cpu90OHLoad$base_time.category == "Continuous Simple", ]$percentageSlowActions, 
                                  cpu90OHLoad[cpu90OHLoad$base_time.category == "Continuous Simple", ]$slowActions)
 
+csCpuBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+csCpuBase[nrow(csCpuBase) + 1,] = list(0, 0)
+csCpuBase[nrow(csCpuBase) + 1,] = list(60, cpu60Load[cpu60Load$base_time.category == "Continuous Simple", ]$slowActions)
+csCpuBase[nrow(csCpuBase) + 1,] = list(75,cpu75Load[cpu75Load$base_time.category == "Continuous Simple", ]$slowActions)
+csCpuBase[nrow(csCpuBase) + 1,] = list(90, cpu90Load[cpu90Load$base_time.category == "Continuous Simple", ]$slowActions)
+csCpuOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+csCpuOH[nrow(csCpuOH) + 1,] = list(0, cpuNoLoad[cpuNoLoad$base_time.category == "Continuous Simple", ]$slowActions)
+csCpuOH[nrow(csCpuOH) + 1,] = list(60, cpu60OHLoad[cpu60OHLoad$base_time.category == "Continuous Simple", ]$slowActions)
+csCpuOH[nrow(csCpuOH) + 1,] = list(75,cpu75OHLoad[cpu75OHLoad$base_time.category == "Continuous Simple", ]$slowActions)
+csCpuOH[nrow(csCpuOH) + 1,] = list(90, cpu90OHLoad[cpu90OHLoad$base_time.category == "Continuous Simple", ]$slowActions)
+
+lmcsBase <- lm(slowactions ~ load, data=csCpuBase)
+lmcsOH <- lm(slowactions ~ load, data=csCpuOH)
+summary(lmcsBase)
+summary(lmcsOH)
+csEqual = (100* ((lmcsOH$coefficients[2] - lmcsBase$coefficients[2]) / lmcsBase$coefficients[2]))
+
+
+
 cc_cpu  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 cc_cpu[nrow(cc_cpu) + 1,] = list("0","base_time", 0, 0)
 cc_cpu[nrow(cc_cpu) + 1,] = list("0","monitored", cpuNoLoad[cpuNoLoad$base_time.category == "Continuous Complex", ]$percentageSlowActions, 
@@ -204,6 +262,25 @@ cc_cpu[nrow(cc_cpu) + 1,] = list("90","base_time", cpu90Load[cpu90Load$base_time
 cc_cpu[nrow(cc_cpu) + 1,] = list("90","monitored", cpu90OHLoad[cpu90OHLoad$base_time.category == "Continuous Complex", ]$percentageSlowActions, 
                                  cpu90OHLoad[cpu90OHLoad$base_time.category == "Continuous Complex", ]$slowActions)
 
+ccCpuBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+ccCpuBase[nrow(ccCpuBase) + 1,] = list(0, 0)
+ccCpuBase[nrow(ccCpuBase) + 1,] = list(60, cpu60Load[cpu60Load$base_time.category == "Continuous Complex", ]$slowActions)
+ccCpuBase[nrow(ccCpuBase) + 1,] = list(75,cpu75Load[cpu75Load$base_time.category == "Continuous Complex", ]$slowActions)
+ccCpuBase[nrow(ccCpuBase) + 1,] = list(90, cpu90Load[cpu90Load$base_time.category == "Continuous Complex", ]$slowActions)
+ccCpuOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+ccCpuOH[nrow(ccCpuOH) + 1,] = list(0, cpuNoLoad[cpuNoLoad$base_time.category == "Continuous Complex", ]$slowActions)
+ccCpuOH[nrow(ccCpuOH) + 1,] = list(60, cpu60OHLoad[cpu60OHLoad$base_time.category == "Continuous Complex", ]$slowActions)
+ccCpuOH[nrow(ccCpuOH) + 1,] = list(75,cpu75OHLoad[cpu75OHLoad$base_time.category == "Continuous Complex", ]$slowActions)
+ccCpuOH[nrow(ccCpuOH) + 1,] = list(90, cpu90OHLoad[cpu90OHLoad$base_time.category == "Continuous Complex", ]$slowActions)
+
+lmccBase <- lm(slowactions ~ load, data=ccCpuBase)
+lmccOH <- lm(slowactions ~ load, data=ccCpuOH)
+summary(lmccBase)
+summary(lmccOH)
+ccEqual = (100* ((lmccOH$coefficients[2] - lmccBase$coefficients[2]) / lmccBase$coefficients[2]))
+
+
+
 capt_cpu  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 capt_cpu[nrow(capt_cpu) + 1,] = list("0","base_time", 0, 0)
 capt_cpu[nrow(capt_cpu) + 1,] = list("0","monitored", cpuNoLoad[cpuNoLoad$base_time.category == "Captive", ]$percentageSlowActions, 
@@ -220,6 +297,26 @@ capt_cpu[nrow(capt_cpu) + 1,] = list("90","base_time", cpu90Load[cpu90Load$base_
                                      cpu90Load[cpu90Load$base_time.category == "Captive", ]$slowActions)
 capt_cpu[nrow(capt_cpu) + 1,] = list("90","monitored", cpu90OHLoad[cpu90OHLoad$base_time.category == "Captive", ]$percentageSlowActions, 
                                      cpu90OHLoad[cpu90OHLoad$base_time.category == "Captive", ]$slowActions)
+
+captCpuBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+captCpuBase[nrow(captCpuBase) + 1,] = list(0, 0)
+captCpuBase[nrow(captCpuBase) + 1,] = list(60, cpu60Load[cpu60Load$base_time.category == "Captive", ]$slowActions)
+captCpuBase[nrow(captCpuBase) + 1,] = list(75,cpu75Load[cpu75Load$base_time.category == "Captive", ]$slowActions)
+captCpuBase[nrow(captCpuBase) + 1,] = list(90, cpu90Load[cpu90Load$base_time.category == "Captive", ]$slowActions)
+captCpuOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+captCpuOH[nrow(captCpuOH) + 1,] = list(0, cpuNoLoad[cpuNoLoad$base_time.category == "Captive", ]$slowActions)
+captCpuOH[nrow(captCpuOH) + 1,] = list(60, cpu60OHLoad[cpu60OHLoad$base_time.category == "Captive", ]$slowActions)
+captCpuOH[nrow(captCpuOH) + 1,] = list(75,cpu75OHLoad[cpu75OHLoad$base_time.category == "Captive", ]$slowActions)
+captCpuOH[nrow(captCpuOH) + 1,] = list(90, cpu90OHLoad[cpu90OHLoad$base_time.category == "Captive", ]$slowActions)
+
+lmcaptBase <- lm(slowactions ~ load, data=captCpuBase)
+lmcaptOH <- lm(slowactions ~ load, data=captCpuOH)
+summary(lmcaptBase)
+summary(lmcaptOH)
+captEqual = (100* ((lmcaptOH$coefficients[2] - lmcaptBase$coefficients[2]) / lmcaptBase$coefficients[2]))
+
+
+
 inst_cpu$percentageSlowActions = as.numeric(as.character(inst_cpu$percentageSlowActions))
 inst_cpu$slowActions = as.numeric(as.character(inst_cpu$slowActions))
 imm_cpu$percentageSlowActions = as.numeric(as.character(imm_cpu$percentageSlowActions))
@@ -311,6 +408,24 @@ inst_ram[nrow(inst_ram) + 1,] = list("90","base_time", ram90Load[ram90Load$base_
 inst_ram[nrow(inst_ram) + 1,] = list("90","monitored", ram90OHLoad[ram90OHLoad$base_time.category == "Instantaneous", ]$percentageSlowActions, 
                                      ram90OHLoad[ram90OHLoad$base_time.category == "Instantaneous", ]$slowActions)
 
+instRamBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+instRamBase[nrow(instRamBase) + 1,] = list(0, 0)
+instRamBase[nrow(instRamBase) + 1,] = list(60, ram60Load[ram60Load$base_time.category == "Instantaneous", ]$slowActions)
+instRamBase[nrow(instRamBase) + 1,] = list(75,ram75Load[ram75Load$base_time.category == "Instantaneous", ]$slowActions)
+instRamBase[nrow(instRamBase) + 1,] = list(90, ram90Load[ram90Load$base_time.category == "Instantaneous", ]$slowActions)
+instRamOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+instRamOH[nrow(instRamOH) + 1,] = list(0, ramNoLoad[ramNoLoad$base_time.category == "Instantaneous", ]$slowActions)
+instRamOH[nrow(instRamOH) + 1,] = list(60, ram60OHLoad[ram60OHLoad$base_time.category == "Instantaneous", ]$slowActions)
+instRamOH[nrow(instRamOH) + 1,] = list(75,ram75OHLoad[ram75OHLoad$base_time.category == "Instantaneous", ]$slowActions)
+instRamOH[nrow(instRamOH) + 1,] = list(90, ram90OHLoad[ram90OHLoad$base_time.category == "Instantaneous", ]$slowActions)
+
+lminstRAMBase <- lm(slowactions ~ load, data=instRamBase)
+lminstRAMOH <- lm(slowactions ~ load, data=instRamOH)
+summary(lminstRAMBase)
+summary(lminstRAMOH)
+instRAMEqual = (100* ((lminstRAMOH$coefficients[2] - lminstRAMBase$coefficients[2]) / lminstRAMBase$coefficients[2]))
+
+
 imm_ram  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 imm_ram[nrow(imm_ram) + 1,] = list("0","base_time", 0, 0)
 imm_ram[nrow(imm_ram) + 1,] = list("0","monitored", ramNoLoad[ramNoLoad$base_time.category == "Immediate", ]$percentageSlowActions, 
@@ -327,6 +442,23 @@ imm_ram[nrow(imm_ram) + 1,] = list("90","base_time", ram90Load[ram90Load$base_ti
                                    ram90Load[ram90Load$base_time.category == "Immediate", ]$slowActions)
 imm_ram[nrow(imm_ram) + 1,] = list("90","monitored", ram90OHLoad[ram90OHLoad$base_time.category == "Immediate", ]$percentageSlowActions, 
                                    ram90OHLoad[ram90OHLoad$base_time.category == "Immediate", ]$slowActions)
+
+immRamBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+immRamBase[nrow(immRamBase) + 1,] = list(0, 0)
+immRamBase[nrow(immRamBase) + 1,] = list(60, ram60Load[ram60Load$base_time.category == "Immediate", ]$slowActions)
+immRamBase[nrow(immRamBase) + 1,] = list(75,ram75Load[ram75Load$base_time.category == "Immediate", ]$slowActions)
+immRamBase[nrow(immRamBase) + 1,] = list(90, ram90Load[ram90Load$base_time.category == "Immediate", ]$slowActions)
+immRamOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+immRamOH[nrow(immRamOH) + 1,] = list(0, ramNoLoad[ramNoLoad$base_time.category == "Immediate", ]$slowActions)
+immRamOH[nrow(immRamOH) + 1,] = list(60, ram60OHLoad[ram60OHLoad$base_time.category == "Immediate", ]$slowActions)
+immRamOH[nrow(immRamOH) + 1,] = list(75,ram75OHLoad[ram75OHLoad$base_time.category == "Immediate", ]$slowActions)
+immRamOH[nrow(immRamOH) + 1,] = list(90, ram90OHLoad[ram90OHLoad$base_time.category == "Immediate", ]$slowActions)
+
+lmimmRAMBase <- lm(slowactions ~ load, data=immRamBase)
+lmimmRAMOH <- lm(slowactions ~ load, data=immRamOH)
+summary(lmimmRAMBase)
+summary(lmimmRAMOH)
+immRAMEqual = (100* ((lmimmRAMOH$coefficients[2] - lmimmRAMBase$coefficients[2]) / lmimmRAMBase$coefficients[2]))
 
 cs_ram  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 cs_ram[nrow(cs_ram) + 1,] = list("0","base_time", 0, 0)
@@ -345,6 +477,24 @@ cs_ram[nrow(cs_ram) + 1,] = list("90","base_time", ram90Load[ram90Load$base_time
 cs_ram[nrow(cs_ram) + 1,] = list("90","monitored", ram90OHLoad[ram90OHLoad$base_time.category == "Continuous Simple", ]$percentageSlowActions, 
                                  ram90OHLoad[ram90OHLoad$base_time.category == "Continuous Simple", ]$slowActions)
 
+csRamBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+csRamBase[nrow(csRamBase) + 1,] = list(0, 0)
+csRamBase[nrow(csRamBase) + 1,] = list(60, ram60Load[ram60Load$base_time.category == "Continuous Simple", ]$slowActions)
+csRamBase[nrow(csRamBase) + 1,] = list(75,ram75Load[ram75Load$base_time.category == "Continuous Simple", ]$slowActions)
+csRamBase[nrow(csRamBase) + 1,] = list(90, ram90Load[ram90Load$base_time.category == "Continuous Simple", ]$slowActions)
+csRamOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+csRamOH[nrow(csRamOH) + 1,] = list(0, ramNoLoad[ramNoLoad$base_time.category == "Continuous Simple", ]$slowActions)
+csRamOH[nrow(csRamOH) + 1,] = list(60, ram60OHLoad[ram60OHLoad$base_time.category == "Continuous Simple", ]$slowActions)
+csRamOH[nrow(csRamOH) + 1,] = list(75,ram75OHLoad[ram75OHLoad$base_time.category == "Continuous Simple", ]$slowActions)
+csRamOH[nrow(csRamOH) + 1,] = list(90, ram90OHLoad[ram90OHLoad$base_time.category == "Continuous Simple", ]$slowActions)
+
+lmcsRAMBase <- lm(slowactions ~ load, data=csRamBase)
+lmcsRAMOH <- lm(slowactions ~ load, data=csRamOH)
+summary(lmcsRAMBase)
+summary(lmcsRAMOH)
+csRAMEqual = (100* ((lmcsRAMOH$coefficients[2] - lmcsRAMBase$coefficients[2]) / lmcsRAMBase$coefficients[2]))
+
+
 cc_ram  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 cc_ram[nrow(cc_ram) + 1,] = list("0","base_time", 0, 0)
 cc_ram[nrow(cc_ram) + 1,] = list("0","monitored", ramNoLoad[ramNoLoad$base_time.category == "Continuous Complex", ]$percentageSlowActions, 
@@ -362,6 +512,24 @@ cc_ram[nrow(cc_ram) + 1,] = list("90","base_time", ram90Load[ram90Load$base_time
 cc_ram[nrow(cc_ram) + 1,] = list("90","monitored", ram90OHLoad[ram90OHLoad$base_time.category == "Continuous Complex", ]$percentageSlowActions, 
                                  ram90OHLoad[ram90OHLoad$base_time.category == "Continuous Complex", ]$slowActions)
 
+ccRamBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+ccRamBase[nrow(ccRamBase) + 1,] = list(0, 0)
+ccRamBase[nrow(ccRamBase) + 1,] = list(60, ram60Load[ram60Load$base_time.category == "Continuous Complex", ]$slowActions)
+ccRamBase[nrow(ccRamBase) + 1,] = list(75,ram75Load[ram75Load$base_time.category == "Continuous Complex", ]$slowActions)
+ccRamBase[nrow(ccRamBase) + 1,] = list(90, ram90Load[ram90Load$base_time.category == "Continuous Complex", ]$slowActions)
+ccRamOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+ccRamOH[nrow(ccRamOH) + 1,] = list(0, ramNoLoad[ramNoLoad$base_time.category == "Continuous Complex", ]$slowActions)
+ccRamOH[nrow(ccRamOH) + 1,] = list(60, ram60OHLoad[ram60OHLoad$base_time.category == "Continuous Complex", ]$slowActions)
+ccRamOH[nrow(ccRamOH) + 1,] = list(75,ram75OHLoad[ram75OHLoad$base_time.category == "Continuous Complex", ]$slowActions)
+ccRamOH[nrow(ccRamOH) + 1,] = list(90, ram90OHLoad[ram90OHLoad$base_time.category == "Continuous Complex", ]$slowActions)
+
+lmccRAMBase <- lm(slowactions ~ load, data=ccRamBase)
+lmccRAMOH <- lm(slowactions ~ load, data=ccRamOH)
+summary(lmccRAMBase)
+summary(lmccRAMOH)
+ccRAMEqual = (100* ((lmccRAMOH$coefficients[2] - lmccRAMBase$coefficients[2]) / lmccRAMBase$coefficients[2]))
+
+
 capt_ram  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 capt_ram[nrow(capt_ram) + 1,] = list("0","base_time", 0, 0)
 capt_ram[nrow(capt_ram) + 1,] = list("0","monitored", ramNoLoad[ramNoLoad$base_time.category == "Captive", ]$percentageSlowActions, 
@@ -378,6 +546,25 @@ capt_ram[nrow(capt_ram) + 1,] = list("90","base_time", ram90Load[ram90Load$base_
                                      ram90Load[ram90Load$base_time.category == "Captive", ]$slowActions)
 capt_ram[nrow(capt_ram) + 1,] = list("90","monitored", ram90OHLoad[ram90OHLoad$base_time.category == "Captive", ]$percentageSlowActions, 
                                      ram90OHLoad[ram90OHLoad$base_time.category == "Captive", ]$slowActions)
+
+captRamBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+captRamBase[nrow(captRamBase) + 1,] = list(0, 0)
+captRamBase[nrow(captRamBase) + 1,] = list(60, ram60Load[ram60Load$base_time.category == "Captive", ]$slowActions)
+captRamBase[nrow(captRamBase) + 1,] = list(75,ram75Load[ram75Load$base_time.category == "Captive", ]$slowActions)
+captRamBase[nrow(captRamBase) + 1,] = list(90, ram90Load[ram90Load$base_time.category == "Captive", ]$slowActions)
+captRamOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+captRamOH[nrow(captRamOH) + 1,] = list(0, ramNoLoad[ramNoLoad$base_time.category == "Captive", ]$slowActions)
+captRamOH[nrow(captRamOH) + 1,] = list(60, ram60OHLoad[ram60OHLoad$base_time.category == "Captive", ]$slowActions)
+captRamOH[nrow(captRamOH) + 1,] = list(75,ram75OHLoad[ram75OHLoad$base_time.category == "Captive", ]$slowActions)
+captRamOH[nrow(captRamOH) + 1,] = list(90, ram90OHLoad[ram90OHLoad$base_time.category == "Captive", ]$slowActions)
+
+lmcaptRAMBase <- lm(slowactions ~ load, data=captRamBase)
+lmcaptRAMOH <- lm(slowactions ~ load, data=captRamOH)
+summary(lmcaptRAMBase)
+summary(lmcaptRAMOH)
+captRAMEqual = (100* ((lmcaptRAMOH$coefficients[2] - lmcaptRAMBase$coefficients[2]) / lmcaptRAMBase$coefficients[2]))
+
+
 inst_ram$percentageSlowActions = as.numeric(as.character(inst_ram$percentageSlowActions))
 inst_ram$slowActions = as.numeric(as.character(inst_ram$slowActions))
 imm_ram$percentageSlowActions = as.numeric(as.character(imm_ram$percentageSlowActions))
@@ -465,6 +652,24 @@ adobe_cpu[nrow(adobe_cpu) + 1,] = list("75","monitored", sum(colSums(adobeCpu75O
 adobe_cpu[nrow(adobe_cpu) + 1,] = list("90","base_time", sum(colSums(adobeCpu90[,8:11]))/sum(colSums(adobeCpu90[,12:15])) * 100, sum(colSums(adobeCpu90[,8:11])))
 adobe_cpu[nrow(adobe_cpu) + 1,] = list("90","monitored", sum(colSums(adobeCpu90OH[,8:11]))/sum(colSums(adobeCpu90OH[,12:15])) * 100, sum(colSums(adobeCpu90OH[,8:11])))
 
+adobeCpuBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+adobeCpuBase[nrow(adobeCpuBase) + 1,] = list(0, 0)
+adobeCpuBase[nrow(adobeCpuBase) + 1,] = list(60, sum(colSums(adobeCpu60[,8:11])))
+adobeCpuBase[nrow(adobeCpuBase) + 1,] = list(75,sum(colSums(adobeCpu75[,8:11])))
+adobeCpuBase[nrow(adobeCpuBase) + 1,] = list(90, sum(colSums(adobeCpu90[,8:11])))
+adobeCpuOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+adobeCpuOH[nrow(adobeCpuOH) + 1,] = list(0, sum(colSums(adobeBase[,8:11])))
+adobeCpuOH[nrow(adobeCpuOH) + 1,] = list(60, sum(colSums(adobeCpu60OH[,8:11])))
+adobeCpuOH[nrow(adobeCpuOH) + 1,] = list(75,sum(colSums(adobeCpu75OH[,8:11])))
+adobeCpuOH[nrow(adobeCpuOH) + 1,] = list(90, sum(colSums(adobeCpu90OH[,8:11])))
+
+lmAdobeBase <- lm(slowactions ~ load, data=adobeCpuBase)
+lmAdobeOH <- lm(slowactions ~ load, data=adobeCpuOH)
+summary(lmAdobeBase)
+summary(lmAdobeOH)
+adobeEqual = (100* ((lmAdobeOH$coefficients[2] - lmAdobeBase$coefficients[2]) / lmAdobeBase$coefficients[2]))
+
+
 notepad_cpu  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 notepad_cpu[nrow(notepad_cpu) + 1,] = list("0","base_time", 0, 0)
 notepad_cpu[nrow(notepad_cpu) + 1,] = list("0","monitored", sum(colSums(notepadBase[,8:11]))/sum(colSums(notepadBase[,12:15])) * 100, sum(colSums(notepadBase[,8:11])))
@@ -474,6 +679,24 @@ notepad_cpu[nrow(notepad_cpu) + 1,] = list("75","base_time", sum(colSums(notepad
 notepad_cpu[nrow(notepad_cpu) + 1,] = list("75","monitored", sum(colSums(notepadCpu75OH[,8:11]))/sum(colSums(notepadCpu75OH[,12:15])) * 100, sum(colSums(notepadCpu75OH[,8:11])))
 notepad_cpu[nrow(notepad_cpu) + 1,] = list("90","base_time", sum(colSums(notepadCpu90[,8:11]))/sum(colSums(notepadCpu90[,12:15])) * 100, sum(colSums(notepadCpu90[,8:11])))
 notepad_cpu[nrow(notepad_cpu) + 1,] = list("90","monitored", sum(colSums(notepadCpu90OH[,8:11]))/sum(colSums(notepadCpu90OH[,12:15])) * 100, sum(colSums(notepadCpu90OH[,8:11])))
+
+notepadCpuBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+notepadCpuBase[nrow(notepadCpuBase) + 1,] = list(0, 0)
+notepadCpuBase[nrow(notepadCpuBase) + 1,] = list(60, sum(colSums(notepadCpu60[,8:11])))
+notepadCpuBase[nrow(notepadCpuBase) + 1,] = list(75,sum(colSums(notepadCpu75[,8:11])))
+notepadCpuBase[nrow(notepadCpuBase) + 1,] = list(90, sum(colSums(notepadCpu90[,8:11])))
+notepadCpuOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+notepadCpuOH[nrow(notepadCpuOH) + 1,] = list(0, sum(colSums(notepadBase[,8:11])))
+notepadCpuOH[nrow(notepadCpuOH) + 1,] = list(60, sum(colSums(notepadCpu60OH[,8:11])))
+notepadCpuOH[nrow(notepadCpuOH) + 1,] = list(75,sum(colSums(notepadCpu75OH[,8:11])))
+notepadCpuOH[nrow(notepadCpuOH) + 1,] = list(90, sum(colSums(notepadCpu90OH[,8:11])))
+
+lmnotepadBase <- lm(slowactions ~ load, data=notepadCpuBase)
+lmnotepadOH <- lm(slowactions ~ load, data=notepadCpuOH)
+summary(lmnotepadBase)
+summary(lmnotepadOH)
+notepadEqual = (100* ((lmnotepadOH$coefficients[2] - lmnotepadBase$coefficients[2]) / lmnotepadBase$coefficients[2]))
+
 
 paint_cpu  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 paint_cpu[nrow(paint_cpu) + 1,] = list("0","base_time", 0, 0)
@@ -485,6 +708,25 @@ paint_cpu[nrow(paint_cpu) + 1,] = list("75","monitored", sum(colSums(paintCpu75O
 paint_cpu[nrow(paint_cpu) + 1,] = list("90","base_time", sum(colSums(paintCpu90[,8:11]))/sum(colSums(paintCpu90[,12:15])) * 100, sum(colSums(paintCpu90[,8:11])))
 paint_cpu[nrow(paint_cpu) + 1,] = list("90","monitored", sum(colSums(paintCpu90OH[,8:11]))/sum(colSums(paintCpu90OH[,12:15])) * 100, sum(colSums(paintCpu90OH[,8:11])))
 
+
+paintCpuBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+paintCpuBase[nrow(paintCpuBase) + 1,] = list(0, 0)
+paintCpuBase[nrow(paintCpuBase) + 1,] = list(60, sum(colSums(paintCpu60[,8:11])))
+paintCpuBase[nrow(paintCpuBase) + 1,] = list(75,sum(colSums(paintCpu75[,8:11])))
+paintCpuBase[nrow(paintCpuBase) + 1,] = list(90, sum(colSums(paintCpu90[,8:11])))
+paintCpuOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+paintCpuOH[nrow(paintCpuOH) + 1,] = list(0, sum(colSums(paintBase[,8:11])))
+paintCpuOH[nrow(paintCpuOH) + 1,] = list(60, sum(colSums(paintCpu60OH[,8:11])))
+paintCpuOH[nrow(paintCpuOH) + 1,] = list(75,sum(colSums(paintCpu75OH[,8:11])))
+paintCpuOH[nrow(paintCpuOH) + 1,] = list(90, sum(colSums(paintCpu90OH[,8:11])))
+
+lmpaintBase <- lm(slowactions ~ load, data=paintCpuBase)
+lmpaintOH <- lm(slowactions ~ load, data=paintCpuOH)
+summary(lmpaintBase)
+summary(lmpaintOH)
+paintEqual = (100* ((lmpaintOH$coefficients[2] - lmpaintBase$coefficients[2]) / lmpaintBase$coefficients[2]))
+
+
 vlc_cpu  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 vlc_cpu[nrow(vlc_cpu) + 1,] = list("0","base_time", 0, 0)
 vlc_cpu[nrow(vlc_cpu) + 1,] = list("0","monitored", sum(colSums(vlcBase[,8:11]))/sum(colSums(vlcBase[,12:15])) * 100, sum(colSums(vlcBase[,8:11])))
@@ -494,6 +736,23 @@ vlc_cpu[nrow(vlc_cpu) + 1,] = list("75","base_time", sum(colSums(vlcCpu75[,8:11]
 vlc_cpu[nrow(vlc_cpu) + 1,] = list("75","monitored", sum(colSums(vlcCpu75OH[,8:11]))/sum(colSums(vlcCpu75OH[,12:15])) * 100, sum(colSums(vlcCpu75OH[,8:11])))
 vlc_cpu[nrow(vlc_cpu) + 1,] = list("90","base_time", sum(colSums(vlcCpu90[,8:11]))/sum(colSums(vlcCpu90[,12:15])) * 100, sum(colSums(vlcCpu90[,8:11])))
 vlc_cpu[nrow(vlc_cpu) + 1,] = list("90","monitored", sum(colSums(vlcCpu90OH[,8:11]))/sum(colSums(vlcCpu90OH[,12:15])) * 100, sum(colSums(vlcCpu90OH[,8:11])))
+
+vlcCpuBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+vlcCpuBase[nrow(vlcCpuBase) + 1,] = list(0, 0)
+vlcCpuBase[nrow(vlcCpuBase) + 1,] = list(60, sum(colSums(vlcCpu60[,8:11])))
+vlcCpuBase[nrow(vlcCpuBase) + 1,] = list(75,sum(colSums(vlcCpu75[,8:11])))
+vlcCpuBase[nrow(vlcCpuBase) + 1,] = list(90, sum(colSums(vlcCpu90[,8:11])))
+vlcCpuOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+vlcCpuOH[nrow(vlcCpuOH) + 1,] = list(0, sum(colSums(vlcBase[,8:11])))
+vlcCpuOH[nrow(vlcCpuOH) + 1,] = list(60, sum(colSums(vlcCpu60OH[,8:11])))
+vlcCpuOH[nrow(vlcCpuOH) + 1,] = list(75,sum(colSums(vlcCpu75OH[,8:11])))
+vlcCpuOH[nrow(vlcCpuOH) + 1,] = list(90, sum(colSums(vlcCpu90OH[,8:11])))
+
+lmvlcBase <- lm(slowactions ~ load, data=vlcCpuBase)
+lmvlcOH <- lm(slowactions ~ load, data=vlcCpuOH)
+summary(lmvlcBase)
+summary(lmvlcOH)
+vlcEqual = (100* ((lmvlcOH$coefficients[2] - lmvlcBase$coefficients[2]) / lmvlcBase$coefficients[2]))
 
 
 p0 <- ggplot(data=adobe_cpu, aes(x=load, y=percentageSlowActions, group=type, colour=type)) + 
@@ -557,6 +816,25 @@ adobe_ram[nrow(adobe_ram) + 1,] = list("75","monitored", sum(colSums(adobeRam75O
 adobe_ram[nrow(adobe_ram) + 1,] = list("90","base_time", sum(colSums(adobeRam90[,8:11]))/sum(colSums(adobeRam90[,12:15])) * 100, sum(colSums(adobeRam90[,8:11])))
 adobe_ram[nrow(adobe_ram) + 1,] = list("90","monitored", sum(colSums(adobeRam90OH[,8:11]))/sum(colSums(adobeRam90OH[,12:15])) * 100, sum(colSums(adobeRam90OH[,8:11])))
 
+adobeRamBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+adobeRamBase[nrow(adobeRamBase) + 1,] = list(0, 0)
+adobeRamBase[nrow(adobeRamBase) + 1,] = list(60, sum(colSums(adobeRam60[,8:11])))
+adobeRamBase[nrow(adobeRamBase) + 1,] = list(75,sum(colSums(adobeRam75[,8:11])))
+adobeRamBase[nrow(adobeRamBase) + 1,] = list(90, sum(colSums(adobeRam90[,8:11])))
+adobeRamOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+adobeRamOH[nrow(adobeRamOH) + 1,] = list(0, sum(colSums(adobeBase[,8:11])))
+adobeRamOH[nrow(adobeRamOH) + 1,] = list(60, sum(colSums(adobeRam60OH[,8:11])))
+adobeRamOH[nrow(adobeRamOH) + 1,] = list(75,sum(colSums(adobeRam75OH[,8:11])))
+adobeRamOH[nrow(adobeRamOH) + 1,] = list(90, sum(colSums(adobeRam90OH[,8:11])))
+
+lmadobeRAMBase <- lm(slowactions ~ load, data=adobeRamBase)
+lmadobeRAMOH <- lm(slowactions ~ load, data=adobeRamOH)
+summary(lmadobeRAMBase)
+summary(lmadobeRAMOH)
+adobeRAMEqual = (100* ((lmadobeRAMOH$coefficients[2] - lmadobeRAMBase$coefficients[2]) / lmadobeRAMBase$coefficients[2]))
+
+
+
 notepad_ram  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 notepad_ram[nrow(notepad_ram) + 1,] = list("0","base_time", 0, 0)
 notepad_ram[nrow(notepad_ram) + 1,] = list("0","monitored", sum(colSums(notepadBase[,8:11]))/sum(colSums(notepadBase[,12:15])) * 100, sum(colSums(notepadBase[,8:11])))
@@ -566,6 +844,24 @@ notepad_ram[nrow(notepad_ram) + 1,] = list("75","base_time", sum(colSums(notepad
 notepad_ram[nrow(notepad_ram) + 1,] = list("75","monitored", sum(colSums(notepadRam75OH[,8:11]))/sum(colSums(notepadRam75OH[,12:15])) * 100, sum(colSums(notepadRam75OH[,8:11])))
 notepad_ram[nrow(notepad_ram) + 1,] = list("90","base_time", sum(colSums(notepadRam90[,8:11]))/sum(colSums(notepadRam90[,12:15])) * 100, sum(colSums(notepadRam90[,8:11])))
 notepad_ram[nrow(notepad_ram) + 1,] = list("90","monitored", sum(colSums(notepadRam90OH[,8:11]))/sum(colSums(notepadRam90OH[,12:15])) * 100, sum(colSums(notepadRam90OH[,8:11])))
+
+notepadRamBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+notepadRamBase[nrow(notepadRamBase) + 1,] = list(0, 0)
+notepadRamBase[nrow(notepadRamBase) + 1,] = list(60, sum(colSums(notepadRam60[,8:11])))
+notepadRamBase[nrow(notepadRamBase) + 1,] = list(75,sum(colSums(notepadRam75[,8:11])))
+notepadRamBase[nrow(notepadRamBase) + 1,] = list(90, sum(colSums(notepadRam90[,8:11])))
+notepadRamOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+notepadRamOH[nrow(notepadRamOH) + 1,] = list(0, sum(colSums(notepadBase[,8:11])))
+notepadRamOH[nrow(notepadRamOH) + 1,] = list(60, sum(colSums(notepadRam60OH[,8:11])))
+notepadRamOH[nrow(notepadRamOH) + 1,] = list(75,sum(colSums(notepadRam75OH[,8:11])))
+notepadRamOH[nrow(notepadRamOH) + 1,] = list(90, sum(colSums(notepadRam90OH[,8:11])))
+
+lmnotepadRAMBase <- lm(slowactions ~ load, data=notepadRamBase)
+lmnotepadRAMOH <- lm(slowactions ~ load, data=notepadRamOH)
+summary(lmnotepadRAMBase)
+summary(lmnotepadRAMOH)
+notepadRAMEqual = (100* ((lmnotepadRAMOH$coefficients[2] - lmnotepadRAMBase$coefficients[2]) / lmnotepadRAMBase$coefficients[2]))
+
 
 paint_ram  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 paint_ram[nrow(paint_ram) + 1,] = list("0","base_time", 0, 0)
@@ -577,6 +873,24 @@ paint_ram[nrow(paint_ram) + 1,] = list("75","monitored", sum(colSums(paintRam75O
 paint_ram[nrow(paint_ram) + 1,] = list("90","base_time", sum(colSums(paintRam90[,8:11]))/sum(colSums(paintRam90[,12:15])) * 100, sum(colSums(paintRam90[,8:11])))
 paint_ram[nrow(paint_ram) + 1,] = list("90","monitored", sum(colSums(paintRam90OH[,8:11]))/sum(colSums(paintRam90OH[,12:15])) * 100, sum(colSums(paintRam90OH[,8:11])))
 
+paintRamBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+paintRamBase[nrow(paintRamBase) + 1,] = list(0, 0)
+paintRamBase[nrow(paintRamBase) + 1,] = list(60, sum(colSums(paintRam60[,8:11])))
+paintRamBase[nrow(paintRamBase) + 1,] = list(75,sum(colSums(paintRam75[,8:11])))
+paintRamBase[nrow(paintRamBase) + 1,] = list(90, sum(colSums(paintRam90[,8:11])))
+paintRamOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+paintRamOH[nrow(paintRamOH) + 1,] = list(0, sum(colSums(paintBase[,8:11])))
+paintRamOH[nrow(paintRamOH) + 1,] = list(60, sum(colSums(paintRam60OH[,8:11])))
+paintRamOH[nrow(paintRamOH) + 1,] = list(75,sum(colSums(paintRam75OH[,8:11])))
+paintRamOH[nrow(paintRamOH) + 1,] = list(90, sum(colSums(paintRam90OH[,8:11])))
+
+lmpaintRAMBase <- lm(slowactions ~ load, data=paintRamBase)
+lmpaintRAMOH <- lm(slowactions ~ load, data=paintRamOH)
+summary(lmpaintRAMBase)
+summary(lmpaintRAMOH)
+paintRAMEqual = (100* ((lmpaintRAMOH$coefficients[2] - lmpaintRAMBase$coefficients[2]) / lmpaintRAMBase$coefficients[2]))
+
+
 vlc_ram  <- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("load", "type", "percentageSlowActions", "slowActions"))
 vlc_ram[nrow(vlc_ram) + 1,] = list("0","base_time", 0, 0)
 vlc_ram[nrow(vlc_ram) + 1,] = list("0","monitored", sum(colSums(vlcBase[,8:11]))/sum(colSums(vlcBase[,12:15])) * 100, sum(colSums(vlcBase[,8:11])))
@@ -586,6 +900,23 @@ vlc_ram[nrow(vlc_ram) + 1,] = list("75","base_time", sum(colSums(vlcRam75[,8:11]
 vlc_ram[nrow(vlc_ram) + 1,] = list("75","monitored", sum(colSums(vlcRam75OH[,8:11]))/sum(colSums(vlcRam75OH[,12:15])) * 100, sum(colSums(vlcRam75OH[,8:11])))
 vlc_ram[nrow(vlc_ram) + 1,] = list("90","base_time", sum(colSums(vlcRam90[,8:11]))/sum(colSums(vlcRam90[,12:15])) * 100, sum(colSums(vlcRam90[,8:11])))
 vlc_ram[nrow(vlc_ram) + 1,] = list("90","monitored", sum(colSums(vlcRam90OH[,8:11]))/sum(colSums(vlcRam90OH[,12:15])) * 100, sum(colSums(vlcRam90OH[,8:11])))
+
+vlcRamBase <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+vlcRamBase[nrow(vlcRamBase) + 1,] = list(0, 0)
+vlcRamBase[nrow(vlcRamBase) + 1,] = list(60, sum(colSums(vlcRam60[,8:11])))
+vlcRamBase[nrow(vlcRamBase) + 1,] = list(75,sum(colSums(vlcRam75[,8:11])))
+vlcRamBase[nrow(vlcRamBase) + 1,] = list(90, sum(colSums(vlcRam90[,8:11])))
+vlcRamOH <- setNames(data.frame(matrix(ncol = 2, nrow = 0)), c("load", "slowactions"))
+vlcRamOH[nrow(vlcRamOH) + 1,] = list(0, sum(colSums(vlcBase[,8:11])))
+vlcRamOH[nrow(vlcRamOH) + 1,] = list(60, sum(colSums(vlcRam60OH[,8:11])))
+vlcRamOH[nrow(vlcRamOH) + 1,] = list(75,sum(colSums(vlcRam75OH[,8:11])))
+vlcRamOH[nrow(vlcRamOH) + 1,] = list(90, sum(colSums(vlcRam90OH[,8:11])))
+
+lmvlcRAMBase <- lm(slowactions ~ load, data=vlcRamBase)
+lmvlcRAMOH <- lm(slowactions ~ load, data=vlcRamOH)
+summary(lmvlcRAMBase)
+summary(lmvlcRAMOH)
+vlcRAMEqual = (100* ((lmvlcRAMOH$coefficients[2] - lmvlcRAMBase$coefficients[2]) / lmvlcRAMBase$coefficients[2]))
 
 
 p0 <- ggplot(data=adobe_ram, aes(x=load, y=percentageSlowActions, group=type, colour=type)) + 
